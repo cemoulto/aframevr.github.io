@@ -662,7 +662,7 @@ a.click {
 .post__projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px 0 15px -1px;
+  margin: 15px 0 25px -1px;
 }
 .post__projects a {
   background-position: center;
@@ -702,6 +702,12 @@ a.click {
 .post__image {
   display: block;
   margin-top: 20px;
+}
+.post .guide-links .float-right {
+  text-align: right;
+}
+.post .guide-links span {
+  max-width: 40%;
 }
 .section-title-active {
   cursor: pointer;
