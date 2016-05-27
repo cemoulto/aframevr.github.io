@@ -8,8 +8,26 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Fri, 20 May 2016 20:58:33 GMT</pubDate>
+    <pubDate>Fri, 27 May 2016 23:06:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 15</title>
+      <link>https://aframe.io/blog/awoa-15/</link>
+      <guid>https://aframe.io/blog/awoa-15/</guid>
+      <pubDate>Fri, 27 May 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;em&gt;A-Frame intensifies&lt;/em&gt; as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multiuser, embedded scenes, room-scale, a
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;&lt;em&gt;A-Frame intensifies&lt;/em&gt; as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multiuser, embedded scenes, room-scale, asymmetric gaming, the A-Frame Editor, and link traversal at SFHTML5 WebVR meetup.&lt;/p&gt;
+&lt;p&gt;Thanks to Matt Simpson for the many contributions this week!&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-15/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 14</title>
@@ -292,20 +310,6 @@
       <content:encoded></content:encoded>
       
       <comments>https://aframe.io/blog/awoa-04/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 3</title>
-      <link>https://aframe.io/blog/awoa-03/</link>
-      <guid>https://aframe.io/blog/awoa-03/</guid>
-      <pubDate>Fri, 05 Feb 2016 08:00:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <content:encoded></content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-03/#disqus_thread</comments>
     </item>
     
   </channel>
