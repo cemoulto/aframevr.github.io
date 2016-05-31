@@ -7,10 +7,11 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="" data-ga-id="UA-24056643-4">
   <head>
-    <title>360&deg; Photosphere Viewer — A-Frame</title>
+    <title>360&deg; Photosphere Viewer – A-Frame</title>
     
 
 <script>
@@ -168,7 +169,8 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <p>Since I knew that A-Frame had been released I thought of implementing this app in A-Frame, as I thought it might be quite easy to do, AND I would learn coding in A-Frame.</p>
 <a id="more"></a>
 <p>After a few hours of playing around I realised that</p>
-<p>(a) yes it is easy to implement a photosphere BUT<br>(b) implementing a decent VR menu could not be done by just using A-Frame tags.</p>
+<p>(a) yes it is easy to implement a photosphere BUT
+(b) implementing a decent VR menu could not be done by just using A-Frame tags.</p>
 <p>Which lead me to implement my first component for A-Frame. As it turned out, I needed actually two components:</p>
 <p>The first component handles the VR photo menu (showing the menu, hiding the menu, position it in space). This component acts as a container for the photo thumbnails. You can check out the <a href="https://github.com/IdeaSpaceVR/aframe-360-degree-photosphere/blob/master/js/components/isvr_photosphere_menu.js" target="_blank" rel="external">source code here</a>. I have to admit that I was not able to write the code for positioning the menu in space. So I turned to <a href="http://stackoverflow.com/questions/34447119/positioning-a-three-js-object-in-front-of-the-camera-but-not-tied-to-the-camera" target="_blank" rel="external">Stack Overflow</a> which helped me out on that one (again).</p>
 <p>The second component is associated to each photo thumbnail within the menu container. I handles the selection of the photo via the mouse click event. I disabled the fuse cursors which would normally emit this click event. After many tests I decided that I did not like the fuse cursor for selecting photos. I guess people nowadays either have a Cardboard 2.0 (which supports a button) or an Oculus Rift and a mouse and keyboard. Additionally, I decided to only show the cursor when the menu is visible.</p>
