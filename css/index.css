@@ -239,7 +239,7 @@ html {
   font-size: 14px;
 }
 body {
-  font: normal 1rem/1.5 Fira Sans, Helvetica, Arial, sans-serif;
+  font: 400 1.1rem/1.6 Fira Sans, Helvetica, Arial, sans-serif;
   color: #333;
 }
 .font-loaded-sans body {
@@ -272,7 +272,7 @@ strong {
 }
 code,
 pre {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: Fira Mono, Andale Mono, Monaco, Courier, monospace;
 }
 .font-loaded-mono code,
@@ -446,6 +446,10 @@ h4 {
   margin-left: 1em;
   padding-left: 1em;
 }
+.copy ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .copy ol {
   list-style: decimal;
   margin-left: 1em;
@@ -453,6 +457,9 @@ h4 {
 }
 .copy ol ol {
   list-style: circle;
+}
+.copy li + li {
+  margin-top: 0.35rem;
 }
 .logo__wordmark {
   background: url("../images/aframe-name-pink.svg") no-repeat;
