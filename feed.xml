@@ -8,8 +8,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Tue, 31 May 2016 22:06:13 GMT</pubDate>
+    <pubDate>Fri, 03 Jun 2016 20:45:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 16</title>
+      <link>https://aframe.io/blog/awoa-16/</link>
+      <guid>https://aframe.io/blog/awoa-16/</guid>
+      <pubDate>Fri, 03 Jun 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;The future is looking bright with WebVR being incubated by W3C. Look forward to
+A Summer of A-Frame.&lt;/p&gt;
+
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;The future is looking bright with WebVR being incubated by W3C. Look forward to
+A Summer of A-Frame.&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-16/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 15</title>
@@ -296,20 +316,6 @@
       <content:encoded></content:encoded>
       
       <comments>https://aframe.io/blog/awoa-05/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 4</title>
-      <link>https://aframe.io/blog/awoa-04/</link>
-      <guid>https://aframe.io/blog/awoa-04/</guid>
-      <pubDate>Fri, 12 Feb 2016 08:00:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <content:encoded></content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-04/#disqus_thread</comments>
     </item>
     
   </channel>
