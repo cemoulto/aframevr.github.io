@@ -8,14 +8,34 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Fri, 03 Jun 2016 23:40:53 GMT</pubDate>
+    <pubDate>Fri, 10 Jun 2016 18:48:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 17</title>
+      <link>https://aframe.io/blog/awoa-17/</link>
+      <guid>https://aframe.io/blog/awoa-17/</guid>
+      <pubDate>Thu, 09 Jun 2016 23:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;The entire Mozilla VR team, &lt;a href=&quot;https://twitter.com/donrmccurdy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Don McCurdy&lt;/a&gt;, and
+&lt;a href=&quot;https:
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;The entire Mozilla VR team, &lt;a href=&quot;https://twitter.com/donrmccurdy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Don McCurdy&lt;/a&gt;, and
+&lt;a href=&quot;https://twitter.com/drawvr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DrawVR&lt;/a&gt; will be hacking on WebVR demos for a
+straight week in London. Forecast calls for a storm next week.&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-17/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 16</title>
       <link>https://aframe.io/blog/awoa-16/</link>
       <guid>https://aframe.io/blog/awoa-16/</guid>
-      <pubDate>Fri, 03 Jun 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 02 Jun 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;The future is looking bright with WebVR being incubated by W3C. Look forward to
@@ -35,7 +55,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 15</title>
       <link>https://aframe.io/blog/awoa-15/</link>
       <guid>https://aframe.io/blog/awoa-15/</guid>
-      <pubDate>Fri, 27 May 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 26 May 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;&lt;em&gt;A-Frame intensifies&lt;/em&gt; as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multiuser, embedded scenes, room-scale, a
@@ -53,7 +73,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 14</title>
       <link>https://aframe.io/blog/awoa-14/</link>
       <guid>https://aframe.io/blog/awoa-14/</guid>
-      <pubDate>Fri, 20 May 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 19 May 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;I have A-Dream that one day A-Frame experiences become multi-user.&lt;/p&gt;
@@ -71,7 +91,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 13</title>
       <link>https://aframe.io/blog/awoa-13/</link>
       <guid>https://aframe.io/blog/awoa-13/</guid>
-      <pubDate>Fri, 13 May 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 12 May 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;Got room-scale?&lt;/p&gt;
@@ -89,7 +109,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 12</title>
       <link>https://aframe.io/blog/awoa-12/</link>
       <guid>https://aframe.io/blog/awoa-12/</guid>
-      <pubDate>Fri, 06 May 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 05 May 2016 23:00:00 GMT</pubDate>
       <description>
       
       </description>
@@ -103,7 +123,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 11</title>
       <link>https://aframe.io/blog/awoa-11/</link>
       <guid>https://aframe.io/blog/awoa-11/</guid>
-      <pubDate>Fri, 29 Apr 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 28 Apr 2016 23:00:00 GMT</pubDate>
       <description>
       
       </description>
@@ -117,7 +137,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 10</title>
       <link>https://aframe.io/blog/awoa-10/</link>
       <guid>https://aframe.io/blog/awoa-10/</guid>
-      <pubDate>Fri, 22 Apr 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 21 Apr 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;&lt;a href=&quot;https://github.com/mayognaise&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mayo&lt;/a&gt; dropping shaders, &lt;a href=&quot;http://altvr.com&quot; target=&quot;_bla
@@ -134,7 +154,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 9</title>
       <link>https://aframe.io/blog/awoa-09/</link>
       <guid>https://aframe.io/blog/awoa-09/</guid>
-      <pubDate>Fri, 15 Apr 2016 07:00:00 GMT</pubDate>
+      <pubDate>Thu, 14 Apr 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;Inspired by &lt;a href=&quot;https://blog.servo.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This Week in Servo&lt;/a&gt;, welcome to A Week of A-Frame! After 
@@ -151,7 +171,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>Amnesty International UK Presents &quot;Fear of the Sky&quot;</title>
       <link>https://aframe.io/blog/syria/</link>
       <guid>https://aframe.io/blog/syria/</guid>
-      <pubDate>Wed, 13 Apr 2016 07:00:00 GMT</pubDate>
+      <pubDate>Tue, 12 Apr 2016 23:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;&lt;a href=&quot;https://www.amnesty.org.uk/&quot;&gt;Amnesty International UK&lt;/a&gt; in coordination with development agency &lt;a href=&quot;http://www.junior.io/&quot;&gt;Junior&lt;/a&gt; and the core A-Frame team recently published &lt;a href=&quot;http://360syria.com&quot;&gt;Fear of the Sky&lt;/a&gt;. Fear of the Sky transports viewers to the besieged city of Aleppo, Syria to witness the devastation of Assad’s barrel bombs. The A-Frame site features 360 photos and narration taken by activists in the field. It will be updated with new media as they are collected.&lt;/p&gt;
@@ -179,7 +199,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A-Frame v0.2.0 - The Extensible VR Web</title>
       <link>https://aframe.io/blog/aframe-v0.2.0/</link>
       <guid>https://aframe.io/blog/aframe-v0.2.0/</guid>
-      <pubDate>Thu, 31 Mar 2016 17:00:00 GMT</pubDate>
+      <pubDate>Thu, 31 Mar 2016 09:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/674727/14156618/3258460c-f67c-11e5-8176-5b66c3169a1c.gif&quot; alt=&quot;A-Frame Community Examples&quot;&gt;&lt;/p&gt;
@@ -238,7 +258,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>The Washington Post Presents &quot;Mars: An Interactive Journey&quot;</title>
       <link>https://aframe.io/blog/mars/</link>
       <guid>https://aframe.io/blog/mars/</guid>
-      <pubDate>Sat, 12 Mar 2016 08:00:00 GMT</pubDate>
+      <pubDate>Sat, 12 Mar 2016 00:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;In collaboration with a group of students and researchers at the University of Texas at Austin, &lt;em&gt;The Washington Post&lt;/em&gt;‘s published an A-Frame feature about Mars and space exploration programs. This is a great example of how WebVR can be used to enhance existing 2D content and reach many people.&lt;/p&gt;
@@ -266,7 +286,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 8</title>
       <link>https://aframe.io/blog/awoa-08/</link>
       <guid>https://aframe.io/blog/awoa-08/</guid>
-      <pubDate>Fri, 11 Mar 2016 08:00:00 GMT</pubDate>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 GMT</pubDate>
       <description>
       
       </description>
@@ -280,7 +300,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 7</title>
       <link>https://aframe.io/blog/awoa-07/</link>
       <guid>https://aframe.io/blog/awoa-07/</guid>
-      <pubDate>Fri, 04 Mar 2016 08:00:00 GMT</pubDate>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 GMT</pubDate>
       <description>
       
       </description>
@@ -294,7 +314,7 @@ A Summer of A-Frame.&lt;/p&gt;
       <title>A Week of A-Frame 6</title>
       <link>https://aframe.io/blog/awoa-06/</link>
       <guid>https://aframe.io/blog/awoa-06/</guid>
-      <pubDate>Fri, 26 Feb 2016 08:00:00 GMT</pubDate>
+      <pubDate>Fri, 26 Feb 2016 00:00:00 GMT</pubDate>
       <description>
       
       </description>
@@ -302,20 +322,6 @@ A Summer of A-Frame.&lt;/p&gt;
       <content:encoded></content:encoded>
       
       <comments>https://aframe.io/blog/awoa-06/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 5</title>
-      <link>https://aframe.io/blog/awoa-05/</link>
-      <guid>https://aframe.io/blog/awoa-05/</guid>
-      <pubDate>Fri, 19 Feb 2016 08:00:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <content:encoded></content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-05/#disqus_thread</comments>
     </item>
     
   </channel>

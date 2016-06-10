@@ -1021,6 +1021,9 @@ a.click {
     padding-left: 35px;
   }
 }
+video {
+  max-width: 100%;
+}
 #__bs_notify__ {
   display: none !important;
 }
