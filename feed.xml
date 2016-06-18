@@ -8,8 +8,30 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Fri, 10 Jun 2016 19:05:04 GMT</pubDate>
+    <pubDate>Sat, 18 Jun 2016 00:52:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 18</title>
+      <link>https://aframe.io/blog/awoa-18/</link>
+      <guid>https://aframe.io/blog/awoa-18/</guid>
+      <pubDate>Thu, 16 Jun 2016 23:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;The Mozilla VR team got together in London with contributors, &lt;a href=&quot;https://twitter.com/donrmccurdy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Do
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;The Mozilla VR team got together in London with contributors, &lt;a href=&quot;https://twitter.com/donrmccurdy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Don
+McCurdy&lt;/a&gt; and &lt;a href=&quot;https://drawvr.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DrawVR&lt;/a&gt;, who
+have been with A-Frame since the start. And
+&lt;a href=&quot;https://twitter.com/georational&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@georational&lt;/a&gt; from down the street stopped by
+to say hi as well. There’s strong momentum heading into the second half of
+2016, let’s do special things to finish off The Year of VR!&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-18/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 17</title>
@@ -308,20 +330,6 @@ A Summer of A-Frame.&lt;/p&gt;
       <content:encoded></content:encoded>
       
       <comments>https://aframe.io/blog/awoa-07/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 6</title>
-      <link>https://aframe.io/blog/awoa-06/</link>
-      <guid>https://aframe.io/blog/awoa-06/</guid>
-      <pubDate>Fri, 26 Feb 2016 00:00:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <content:encoded></content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-06/#disqus_thread</comments>
     </item>
     
   </channel>
