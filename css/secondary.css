@@ -864,6 +864,10 @@ a.click {
   font-weight: normal;
   margin-left: 10px;
 }
+.install-note:after {
+  display: block;
+  content: "";
+}
 .content--structured h2[id],
 .content--structured h3[id],
 .content--structured h4[id],
