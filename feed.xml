@@ -8,8 +8,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Sat, 02 Jul 2016 20:45:17 GMT</pubDate>
+    <pubDate>Fri, 08 Jul 2016 22:30:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 20</title>
+      <link>https://aframe.io/blog/awoa-20/</link>
+      <guid>https://aframe.io/blog/awoa-20/</guid>
+      <pubDate>Fri, 08 Jul 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;The &lt;a href=&quot;https://github.com/aframevr/aframe-editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A-Frame Editor&lt;/a&gt; is publicly
+underway, and the s
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;The &lt;a href=&quot;https://github.com/aframevr/aframe-editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A-Frame Editor&lt;/a&gt; is publicly
+underway, and the slated release target for 0.3.0 is the end of next week!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/awoa/editor-teaser.jpg&quot; alt=&quot;Editor Teaser&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-20/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 19</title>
@@ -320,20 +340,6 @@ A Summer of A-Frame.&lt;/p&gt;
 </content:encoded>
       
       <comments>https://aframe.io/blog/mars/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 8</title>
-      <link>https://aframe.io/blog/awoa-08/</link>
-      <guid>https://aframe.io/blog/awoa-08/</guid>
-      <pubDate>Fri, 11 Mar 2016 08:00:00 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <content:encoded></content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-08/#disqus_thread</comments>
     </item>
     
   </channel>

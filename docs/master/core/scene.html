@@ -390,6 +390,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/components/look-at.html"
+               class="subnav-link">
+              look-at
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/components/look-controls.html"
                class="subnav-link">
               look-controls
@@ -705,11 +712,11 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <tbody>
 <tr>
 <td>enterVR</td>
-<td>Switch to stereo render and push content to the headset. Needs to be called within a user-generated event handler like <code>click</code>. the first time a page enters VR.</td>
+<td>Switch to stereo renderer and enter fullscreen. Needs to be called within a user-generated event handler like <code>click</code>.</td>
 </tr>
 <tr>
 <td>exitVR</td>
-<td>Switch to mono renderer and stops presenting content on the headset.</td>
+<td>Switch to mono renderer and exit fullscreen.</td>
 </tr>
 <tr>
 <td>reload</td>
@@ -727,11 +734,11 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <tbody>
 <tr>
 <td>enter-vr</td>
-<td>User has entered VR and headset started presenting content.</td>
+<td>User has entered VR and fullscreen.</td>
 </tr>
 <tr>
 <td>exit-vr</td>
-<td>User has exited VR and headset stopped presenting content.</td>
+<td>User has exited VR and fullscreen.</td>
 </tr>
 <tr>
 <td>loaded</td>
