@@ -458,7 +458,9 @@ h4 {
 .copy ol ol {
   list-style: circle;
 }
-.copy li + li {
+.copy li + li,
+.copy ul ul li,
+.copy ol ol li {
   margin-top: 0.35rem;
 }
 .logo__wordmark {
@@ -1024,6 +1026,9 @@ a.click {
     margin-left: -25px;
     padding-left: 35px;
   }
+}
+#toc a {
+  border-bottom: 0;
 }
 video {
   max-width: 100%;
