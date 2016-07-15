@@ -8,8 +8,22 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Mon, 11 Jul 2016 23:03:40 GMT</pubDate>
+    <pubDate>Fri, 15 Jul 2016 21:21:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 21</title>
+      <link>https://aframe.io/blog/awoa-21/</link>
+      <guid>https://aframe.io/blog/awoa-21/</guid>
+      <pubDate>Fri, 15 Jul 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <content:encoded></content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-21/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 20</title>
@@ -312,34 +326,6 @@ A Summer of A-Frame.&lt;/p&gt;
 </content:encoded>
       
       <comments>https://aframe.io/blog/aframe-v0.2.0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>The Washington Post Presents &quot;Mars: An Interactive Journey&quot;</title>
-      <link>https://aframe.io/blog/mars/</link>
-      <guid>https://aframe.io/blog/mars/</guid>
-      <pubDate>Sat, 12 Mar 2016 08:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;In collaboration with a group of students and researchers at the University of Texas at Austin, &lt;em&gt;The Washington Post&lt;/em&gt;‘s published an A-Frame feature about Mars and space exploration programs. This is a great example of how WebVR can be used to enhance existing 2D content and reach many people.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/graphics/business/mars-journey/&quot;&gt;Read the feature.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/pr/wp/2016/03/11/experience-mars-with-the-washington-posts-virtual-reality/&quot;&gt;Read the press release.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.washingtonpost.com/pb/blog/post/2016/03/11/vr-for-all/&quot;&gt;Read the tech case study.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;In collaboration with a group of students and researchers at the University of Texas at Austin, &lt;em&gt;The Washington Post&lt;/em&gt;‘s published an A-Frame feature about Mars and space exploration programs. This is a great example of how WebVR can be used to enhance existing 2D content and reach many people.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/graphics/business/mars-journey/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Read the feature.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.washingtonpost.com/pr/wp/2016/03/11/experience-mars-with-the-washington-posts-virtual-reality/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Read the press release.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.washingtonpost.com/pb/blog/post/2016/03/11/vr-for-all/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Read the tech case study.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content:encoded>
-      
-      <comments>https://aframe.io/blog/mars/#disqus_thread</comments>
     </item>
     
   </channel>

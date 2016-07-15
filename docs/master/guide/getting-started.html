@@ -676,7 +676,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- Production Version, Minified --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- Development Version, Uncompressed with Source Maps --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
 <script>
   // NOTE: Hack because variables doesn't get interpolated correctly in Markdown code blocks.
-  var versionEls = document.querySelectorAll('.highlight .value');
+  var versionEls = document.querySelectorAll('.highlight .code .string');
   for (var i = 0; i < versionEls.length; ++i) {
     versionEls[i].textContent = versionEls[i].textContent.replace('\{\{ version \}\}', '0.2.0');
   }
