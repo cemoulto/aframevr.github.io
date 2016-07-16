@@ -8,7 +8,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Fri, 15 Jul 2016 21:53:50 GMT</pubDate>
+    <pubDate>Sat, 16 Jul 2016 07:00:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,9 +18,15 @@
       <pubDate>Fri, 15 Jul 2016 07:00:00 GMT</pubDate>
       <description>
       
+        &lt;p&gt;Where’s 0.3.0? It will take yet another week or so. A lot of work on our plates,
+but it will be worth the wait!&lt;/p&gt;
+
+      
       </description>
       
-      <content:encoded></content:encoded>
+      <content:encoded>&lt;p&gt;Where’s 0.3.0? It will take yet another week or so. A lot of work on our plates,
+but it will be worth the wait!&lt;/p&gt;
+</content:encoded>
       
       <comments>https://aframe.io/blog/awoa-21/#disqus_thread</comments>
     </item>
