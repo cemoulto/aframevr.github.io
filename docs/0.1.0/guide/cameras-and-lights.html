@@ -169,28 +169,29 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </div>
 
 
-  <!-- Version dropdown. -->
-  <label class="subnav-label" for="docs-version"><b>Version</b></label>
-  <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
-    
-      <option false
-              data-href="/docs/master/guide/">
-        master
-      </option>
-    
-      <option false
-              data-href="/docs/0.2.0/guide/">
-        0.2.0
-      </option>
-    
-      <option selected
-              data-href="/docs/0.1.0/guide/">
-        0.1.0
-      </option>
-    
-  </select>
-
   <div class="list">
+
+      <!-- Version dropdown. -->
+      <label class="subnav-label" for="docs-version"><b>Version</b></label>
+      <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
+        
+          <option false
+                  data-href="/docs/master/guide/">
+            master
+          </option>
+        
+          <option false
+                  data-href="/docs/0.2.0/guide/">
+            0.2.0
+          </option>
+        
+          <option selected
+                  data-href="/docs/0.1.0/guide/">
+            0.1.0
+          </option>
+        
+      </select>
+      
     
       
 
