@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="master">
   <head>
-    <title>Getting Started –  Docs  – A-Frame</title>
+    <title>hand-controls –  Docs  – A-Frame</title>
     
 
 <script>
@@ -73,7 +73,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
 
   </head>
-  <body data-page-layout="docs" data-page-type="guide">
+  <body data-page-layout="docs" data-page-type="components">
     
       <aside class="sidebar sidebar-mobile borderless-links c">
   <header id="header" class="header">
@@ -196,9 +196,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-active">
+      <h3 class="section-title docs-section-title section-title-inactive">
         <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-active">
+           class="section-title-link section-title-link-inactive">
           Guide
         </a>
       </h3>
@@ -213,9 +213,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item  subnav-item-current">
+          <li class="subnav-item ">
             <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link current">
+               class="subnav-link">
               Getting Started
             </a>
           </li>
@@ -338,9 +338,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
+      <h3 class="section-title docs-section-title section-title-active">
         <a href="/docs/master/components/"
-           class="section-title-link section-title-link-inactive">
+           class="section-title-link section-title-link-active">
           Components
         </a>
       </h3>
@@ -411,9 +411,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item ">
+          <li class="subnav-item  subnav-item-current">
             <a href="/docs/master/components/hand-controls.html"
-               class="subnav-link">
+               class="subnav-link current">
               hand-controls
             </a>
           </li>
@@ -705,11 +705,11 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </aside>
 
 <!-- Documentation. -->
-<div class="content content--structured content--guide copy">
+<div class="content content--structured content--components copy">
   <div class="copy__wrap">
     <p class="page__section">
-      <a href="/docs/master/guide/" class="borderless-link">
-        master &rsaquo; Guide
+      <a href="/docs/master/components/geometry.html" class="borderless-link">
+        master &rsaquo; Components
       </a>
     </p>
     
@@ -718,113 +718,79 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </blockquote>
 
     
-    <h1 class="page__title">Getting Started</h1>
+    <h1 class="page__title">hand-controls</h1>
 
     
     
-      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Welcome! Make sure to read the <a href="./">introduction</a>. If you’re ready to
-go, we have several ways of getting started.</p>
-
-      
-
-
-  <h2>Table of Contents</h2>
-
-  <ul id="toc">
-    
-      <li>
-        <a href="#play-with-codepen">Play with CodePen</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#grab-the-boilerplate">Grab the Boilerplate</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#include-the-js-build">Include the JS Build</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#install-from-npm">Install from npm</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-  </ul>
-
-
-      
-<h2 id="play-with-codepen"><a href="#play-with-codepen" class="headerlink" title="Play with CodePen"></a>Play with CodePen</h2><p><a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">CodePen</a> is a playground for front-end web development. We can edit
-HTML and JavaScript directly in the browser with its text editor, see changes
-live, and share code snippets. This is a fast way to dive in without having to
-download or install anything. Check out the <a href="http://codepen.io/mozvr/" target="_blank" rel="external">official MozVR
-CodePens</a> and the <a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">A-Frame Hello World
-CodePen</a>:</p>
-<p data-height="300" data-theme-id="0" data-slug-hash="BjygdO" data-default-tab="html" data-user="mozvr" class="codepen">See the Pen <a href="http://codepen.io/team/mozvr/pen/BjygdO/" target="_blank" rel="external">Hello World â A-Frame</a> by Mozilla VR (<a href="http://codepen.io/mozvr" target="_blank" rel="external">@mozvr</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
-
-<h2 id="grab-the-boilerplate"><a href="#grab-the-boilerplate" class="headerlink" title="Grab the Boilerplate"></a>Grab the Boilerplate</h2><p>The boilerplate contains:</p>
-<ul>
-<li>A simple HTML file that links to the <a href="#builds-prod">current version of A-Frame</a> of A-Frame</li>
-<li>An optional local development server</li>
-<li>An easy deployment workflow for <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a> to share with the world</li>
-</ul>
-<p>We can grab the boilerplate in one of two ways:</p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/" target="_blank" rel="external">Fork on GitHub</a></p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip" target="_blank" rel="external">Download .ZIP<span></span></a></p>
-<h2 id="include-the-js-build"><a href="#include-the-js-build" class="headerlink" title="Include the JS Build"></a>Include the JS Build</h2><p>If we want to just include the JS build from the CDN, we can drop a <code>&lt;script&gt;</code> tag straight into our HTML:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- Production Version, Minified --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- Development Version, Uncompressed with Source Maps --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>If we want to serve it locally, we can download the JS build:</p>
-<p><a id="builds-prod" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.min.js" download="">Production Version <span>0.2.0</span></a> <em class="install-note">Minified</em>
-<a id="builds-dev" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.js" download="">Development Version <span>0.2.0</span></a> <em class="install-note">Uncompressed with Source Maps</em></p>
-<h2 id="install-from-npm"><a href="#install-from-npm" class="headerlink" title="Install from npm"></a>Install from npm</h2><p>For more advanced users who want to use their own build steps, we can install through npm:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># Latest stable version (https://www.npmjs.com/package/aframe)</span></div><div class="line">$ npm install aframe</div><div class="line"></div><div class="line"><span class="comment"># Bleeding-edge version (https://github.com/aframevr/aframe)</span></div><div class="line">$ npm install aframevr/aframe</div></pre></td></tr></table></figure>
-<p>Then we can just require A-Frame from our app, perhaps built with Browserify or Webpack:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'aframe'</span>);</div></pre></td></tr></table></figure>
+      <p>It handles events coming from the vive-controls
+Translate button events to hand related actions:
+gripclose, gripopen, thumbup, thumbdown, pointup, pointdown
+It loads a hand model with gestures that are applied based
+on the button pressed</p>
+<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">hand-controls</span>=<span class="string">"left"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="value"><a href="#value" class="headerlink" title="Value"></a>Value</h2><table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>The entity will track the left hand.</td>
+</tr>
+<tr>
+<td>right</td>
+<td>The entity will track the right hand.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="events"><a href="#events" class="headerlink" title="Events"></a>Events</h2><table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gripclose</td>
+<td>Hand is closed</td>
+</tr>
+<tr>
+<td>gripopen</td>
+<td>Hand is open</td>
+</tr>
+<tr>
+<td>pointup</td>
+<td>Index is up</td>
+</tr>
+<tr>
+<td>pointdown</td>
+<td>Index is down</td>
+</tr>
+<tr>
+<td>thumbup</td>
+<td>Thumb is up</td>
+</tr>
+<tr>
+<td>thumbdown</td>
+<td>Thumb is down</td>
+</tr>
+</tbody>
+</table>
 
     
 
     <!-- Previous / Next navigation. -->
     <footer class="footer guide-links c">
       
-        <span class="float-left">
-          <a href="/docs/master/guide/" class="guide-link guide-link-left">← Introduction </a></span>
-      
-      
-        <span class="float-right">
-          <a href="/docs/master/guide/building-a-basic-scene.html" class="guide-link guide-link-right">Building a Basic Scene →</a></span>
       
     </footer>
 
     <footer class="footer footnote">
-  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/guide/getting-started.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
+  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/components/hand-controls.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
 </footer>
 
   </div>

@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="master">
   <head>
-    <title>Getting Started –  Docs  – A-Frame</title>
+    <title>Device & Platform Support –  Docs  – A-Frame</title>
     
 
 <script>
@@ -213,9 +213,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item  subnav-item-current">
+          <li class="subnav-item ">
             <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link current">
+               class="subnav-link">
               Getting Started
             </a>
           </li>
@@ -234,9 +234,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item ">
+          <li class="subnav-item  subnav-item-current">
             <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
+               class="subnav-link current">
               Device &amp; Platform Support
             </a>
           </li>
@@ -718,14 +718,14 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </blockquote>
 
     
-    <h1 class="page__title">Getting Started</h1>
+    <h1 class="page__title">Device &amp; Platform Support</h1>
 
     
     
-      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Welcome! Make sure to read the <a href="./">introduction</a>. If you’re ready to
-go, we have several ways of getting started.</p>
+      <p>Devices and platform support depends on how well the browsers support certain
+devices and APIs. A-Frame supports both flat (3D on a normal screen) and WebVR
+experiences, though its focus is heavily VR. We will break up support into two
+categories: flat and VR.</p>
 
       
 
@@ -735,7 +735,7 @@ go, we have several ways of getting started.</p>
   <ul id="toc">
     
       <li>
-        <a href="#play-with-codepen">Play with CodePen</a>
+        <a href="#support-for-flat-experiences">Support for Flat Experiences</a>
 
         <!-- Nested. -->
         
@@ -746,29 +746,20 @@ go, we have several ways of getting started.</p>
       </li>
     
       <li>
-        <a href="#grab-the-boilerplate">Grab the Boilerplate</a>
+        <a href="#support-for-vr-experiences">Support for VR Experiences</a>
 
         <!-- Nested. -->
         
           <ul>
+            
+              <li><a href="#support-for-controllers">Support for Controllers</a></li>
             
           </ul>
         
       </li>
     
       <li>
-        <a href="#include-the-js-build">Include the JS Build</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#install-from-npm">Install from npm</a>
+        <a href="#hardware-specifications">Hardware Specifications</a>
 
         <!-- Nested. -->
         
@@ -782,32 +773,22 @@ go, we have several ways of getting started.</p>
 
 
       
-<h2 id="play-with-codepen"><a href="#play-with-codepen" class="headerlink" title="Play with CodePen"></a>Play with CodePen</h2><p><a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">CodePen</a> is a playground for front-end web development. We can edit
-HTML and JavaScript directly in the browser with its text editor, see changes
-live, and share code snippets. This is a fast way to dive in without having to
-download or install anything. Check out the <a href="http://codepen.io/mozvr/" target="_blank" rel="external">official MozVR
-CodePens</a> and the <a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">A-Frame Hello World
-CodePen</a>:</p>
-<p data-height="300" data-theme-id="0" data-slug-hash="BjygdO" data-default-tab="html" data-user="mozvr" class="codepen">See the Pen <a href="http://codepen.io/team/mozvr/pen/BjygdO/" target="_blank" rel="external">Hello World â A-Frame</a> by Mozilla VR (<a href="http://codepen.io/mozvr" target="_blank" rel="external">@mozvr</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
-
-<h2 id="grab-the-boilerplate"><a href="#grab-the-boilerplate" class="headerlink" title="Grab the Boilerplate"></a>Grab the Boilerplate</h2><p>The boilerplate contains:</p>
-<ul>
-<li>A simple HTML file that links to the <a href="#builds-prod">current version of A-Frame</a> of A-Frame</li>
-<li>An optional local development server</li>
-<li>An easy deployment workflow for <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a> to share with the world</li>
-</ul>
-<p>We can grab the boilerplate in one of two ways:</p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/" target="_blank" rel="external">Fork on GitHub</a></p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip" target="_blank" rel="external">Download .ZIP<span></span></a></p>
-<h2 id="include-the-js-build"><a href="#include-the-js-build" class="headerlink" title="Include the JS Build"></a>Include the JS Build</h2><p>If we want to just include the JS build from the CDN, we can drop a <code>&lt;script&gt;</code> tag straight into our HTML:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- Production Version, Minified --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- Development Version, Uncompressed with Source Maps --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>If we want to serve it locally, we can download the JS build:</p>
-<p><a id="builds-prod" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.min.js" download="">Production Version <span>0.2.0</span></a> <em class="install-note">Minified</em>
-<a id="builds-dev" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.js" download="">Development Version <span>0.2.0</span></a> <em class="install-note">Uncompressed with Source Maps</em></p>
-<h2 id="install-from-npm"><a href="#install-from-npm" class="headerlink" title="Install from npm"></a>Install from npm</h2><p>For more advanced users who want to use their own build steps, we can install through npm:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># Latest stable version (https://www.npmjs.com/package/aframe)</span></div><div class="line">$ npm install aframe</div><div class="line"></div><div class="line"><span class="comment"># Bleeding-edge version (https://github.com/aframevr/aframe)</span></div><div class="line">$ npm install aframevr/aframe</div></pre></td></tr></table></figure>
-<p>Then we can just require A-Frame from our app, perhaps built with Browserify or Webpack:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'aframe'</span>);</div></pre></td></tr></table></figure>
+<h2 id="support-for-flat-experiences"><a href="#support-for-flat-experiences" class="headerlink" title="Support for Flat Experiences"></a>Support for Flat Experiences</h2><p>Support for flat experiences primarily depends on a browser’s WebGL support.
+We can see which browsers support WebGL at <a href="http://caniuse.com/#feat=webgl" target="_blank" rel="external">Can I use WebGL?</a>.</p>
+<h2 id="support-for-vr-experiences"><a href="#support-for-vr-experiences" class="headerlink" title="Support for VR Experiences"></a>Support for VR Experiences</h2><p>Support for VR experiences, along with WebGL support, depends on a browser’s
+support for the <a href="https://w3c.github.io/webvr/" target="_blank" rel="external">WebVR API</a>. You can see which browsers currently
+support the WebVR API at <a href="https://iswebvrready.org" target="_blank" rel="external">Is WebVR Ready?</a>. A-Frame supports
+version 1.0 of the WebVR API.</p>
+<p>The exception to this is for mobile devices, which are supported through the
+<a href="https://github.com/borismus/webvr-polyfill" target="_blank" rel="external">WebVR Polyfill</a>.</p>
+<h3 id="support-for-controllers"><a href="#support-for-controllers" class="headerlink" title="Support for Controllers"></a>Support for Controllers</h3><p>A-Frame currently supports <a href="https://en.wikipedia.org/wiki/Six_degrees_of_freedom" target="_blank" rel="external"><code>6DoF</code></a> controllers using Brandon Jones’ 4/24/16
+<a href="https://webvr.info/get-chrome/" target="_blank" rel="external">experimental build of Chromium</a> with experimental controller support
+(e.g., Vive controllers).</p>
+<h2 id="hardware-specifications"><a href="#hardware-specifications" class="headerlink" title="Hardware Specifications"></a>Hardware Specifications</h2><p>For the Oculus Rift and HTC Vive, we defer to the <a href="https://www.oculus.com/en-us/oculus-ready-pcs/" target="_blank" rel="external">Rift recommended
+requirements</a> and the <a href="https://www.htcvive.com/us/product-optimized/" target="_blank" rel="external">Vive
+recommended requirements</a>.</p>
+<p>For mobile, we recommend at least an <em>iPhone 6 for iOS</em> and at least a <em>Galaxy
+S6 for Android</em>.</p>
 
     
 
@@ -815,16 +796,16 @@ CodePen</a>:</p>
     <footer class="footer guide-links c">
       
         <span class="float-left">
-          <a href="/docs/master/guide/" class="guide-link guide-link-left">← Introduction </a></span>
+          <a href="/docs/master/guide/building-an-advanced-scene.html" class="guide-link guide-link-left">← Building an Advanced Scene </a></span>
       
       
         <span class="float-right">
-          <a href="/docs/master/guide/building-a-basic-scene.html" class="guide-link guide-link-right">Building a Basic Scene →</a></span>
+          <a href="/docs/master/guide/best-practices.html" class="guide-link guide-link-right">Best Practices →</a></span>
       
     </footer>
 
     <footer class="footer footnote">
-  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/guide/getting-started.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
+  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/guide/device-and-platform-support.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
 </footer>
 
   </div>

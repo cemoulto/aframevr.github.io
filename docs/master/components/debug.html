@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="master">
   <head>
-    <title>camera –  Docs  – A-Frame</title>
+    <title>debug –  Docs  – A-Frame</title>
     
 
 <script>
@@ -204,12 +204,12 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       </h3>
 
       <!-- Section links. -->
-      <ol class="subnav section-subnav numbered-subnav">
+      <ol class="subnav section-subnav">
         
           <li class="subnav-item ">
             <a href="/docs/master/guide/"
                class="subnav-link">
-              Overview
+              Introduction
             </a>
           </li>
         
@@ -231,6 +231,20 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/guide/building-an-advanced-scene.html"
                class="subnav-link">
               Building an Advanced Scene
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/guide/device-and-platform-support.html"
+               class="subnav-link">
+              Device &amp; Platform Support
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/guide/best-practices.html"
+               class="subnav-link">
+              Best Practices
             </a>
           </li>
         
@@ -299,13 +313,6 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/shaders.html"
-               class="subnav-link">
-              Shaders
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
             <a href="/docs/master/core/asset-management-system.html"
                class="subnav-link">
               Asset Management System
@@ -313,9 +320,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/core/utils.html"
+               class="subnav-link">
+              Utils
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              AFRAME
+              AFRAME Globals
             </a>
           </li>
         
@@ -334,9 +348,30 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <!-- Section links. -->
       <ol class="subnav section-subnav">
         
-          <li class="subnav-item  subnav-item-current">
-            <a href="/docs/master/components/"
-               class="subnav-link current">
+          <li class="subnav-item ">
+            <a href="/docs/master/components/geometry.html"
+               class="subnav-link">
+              geometry
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/material.html"
+               class="subnav-link">
+              material
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/blend-model.html"
+               class="subnav-link">
+              blend-model
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/camera.html"
+               class="subnav-link">
               camera
             </a>
           </li>
@@ -362,6 +397,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
+          <li class="subnav-item  subnav-item-current">
+            <a href="/docs/master/components/debug.html"
+               class="subnav-link current">
+              debug
+            </a>
+          </li>
+        
           <li class="subnav-item ">
             <a href="/docs/master/components/fog.html"
                class="subnav-link">
@@ -370,9 +412,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/components/geometry.html"
+            <a href="/docs/master/components/hand-controls.html"
                class="subnav-link">
-              geometry
+              hand-controls
             </a>
           </li>
         
@@ -391,23 +433,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/components/look-at.html"
-               class="subnav-link">
-              look-at
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
             <a href="/docs/master/components/look-controls.html"
                class="subnav-link">
               look-controls
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/components/material.html"
-               class="subnav-link">
-              material
             </a>
           </li>
         
@@ -468,6 +496,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/components/vive-controls.html"
+               class="subnav-link">
+              vive-controls
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/components/vr-mode-ui.html"
                class="subnav-link">
               vr-mode-ui
@@ -504,13 +539,6 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/primitives/mesh-attributes.html"
-               class="subnav-link">
-              Mesh Attributes
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
             <a href="/docs/master/primitives/a-box.html"
                class="subnav-link">
               &lt;a-box&gt;
@@ -521,6 +549,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/primitives/a-camera.html"
                class="subnav-link">
               &lt;a-camera&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-circle.html"
+               class="subnav-link">
+              &lt;a-circle&gt;
             </a>
           </li>
         
@@ -560,6 +595,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-dodecahedron.html"
+               class="subnav-link">
+              &lt;a-dodecahedron&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/primitives/a-image.html"
                class="subnav-link">
               &lt;a-image&gt;
@@ -577,6 +619,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/primitives/a-obj-model.html"
                class="subnav-link">
               &lt;a-obj-model&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-octahedron.html"
+               class="subnav-link">
+              &lt;a-octahedron&gt;
             </a>
           </li>
         
@@ -602,9 +651,30 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-sound.html"
+               class="subnav-link">
+              &lt;a-sound&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/primitives/a-sphere.html"
                class="subnav-link">
               &lt;a-sphere&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-tetrahedron.html"
+               class="subnav-link">
+              &lt;a-tetrahedron&gt;
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/primitives/a-torus-knot.html"
+               class="subnav-link">
+              &lt;a-torus-knot&gt;
             </a>
           </li>
         
@@ -638,7 +708,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <div class="content content--structured content--components copy">
   <div class="copy__wrap">
     <p class="page__section">
-      <a href="/docs/master/components/" class="borderless-link">
+      <a href="/docs/master/components/geometry.html" class="borderless-link">
         master &rsaquo; Components
       </a>
     </p>
@@ -648,45 +718,19 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </blockquote>
 
     
-    <h1 class="page__title">camera</h1>
+    <h1 class="page__title">debug</h1>
 
     
     
-      <p>The camera component defines from which perspective the user views the scene. It is often paired with controls-related components that allow user input to move and rotate the camera.</p>
-<p>It is recommended to wrap entities with the camera component within another entity. This allows us to change the position of the camera without colliding with controls.</p>
-<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">position</span>=<span class="string">"0 1.8 5"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">camera</span> <span class="attr">look-controls</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="properties"><a href="#properties" class="headerlink" title="Properties"></a>Properties</h2><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Default Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>active</td>
-<td>Whether the camera is currently the active camera in a scene with multiple cameras.</td>
-<td>true</td>
-</tr>
-<tr>
-<td>far</td>
-<td>Camera frustum far clipping plane.</td>
-<td>10000</td>
-</tr>
-<tr>
-<td>fov</td>
-<td>Field of view (in degrees).</td>
-<td>80</td>
-</tr>
-<tr>
-<td>near</td>
-<td>Camera frustum near clipping plane.</td>
-<td>0.5</td>
-</tr>
-</tbody>
-</table>
-<h2 id="changing-the-active-camera"><a href="#changing-the-active-camera" class="headerlink" title="Changing the Active Camera"></a>Changing the Active Camera</h2><p>When the <code>active</code> property is toggled, the component will notify the camera system to change the current camera used by the renderer.</p>
+      <p>The debug component enables component-to-DOM serialization.</p>
+<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-scene</span> <span class="attr">debug</span>&gt;</span><span class="tag">&lt;/<span class="name">a-scene</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="component-to-dom-serialization"><a href="#component-to-dom-serialization" class="headerlink" title="Component-to-DOM Serialization"></a>Component-to-DOM Serialization</h2><p>By default, for performance reasons, A-Frame does not update the DOM with component data. If we open the browser’s DOM inspector, we will see that many entities will have only the component name visible:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">geometry</span> <span class="attr">material</span> <span class="attr">position</span> <span class="attr">rotation</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>The component data is stored internally. Updating the DOM takes CPU time for converting component data, which is stored internally, to strings. However, when we want to see the DOM update for debugging purposes, we can attach the <code>debug</code> component to the scene. Components will check whether the <code>debug</code> component is enabled before trying to serialize to the DOM. Then we will be able to view component data in the DOM:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">geometry</span>=<span class="string">"primitive: box"</span> <span class="attr">material</span>=<span class="string">"color: red"</span> <span class="attr">position</span>=<span class="string">"1 2 3"</span> <span class="attr">rotation</span>=<span class="string">"0 180 0"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Make sure that this component is not active in production.</p>
+<h3 id="manually-serializing-to-dom"><a href="#manually-serializing-to-dom" class="headerlink" title="Manually Serializing to DOM"></a>Manually Serializing to DOM</h3><p>To manually serialize to DOM, use <a href="../core/entity.html#flushtodom-recursive"><code>Entity.flushToDOM</code></a> or
+<a href="../core/component.html#flushtodom"><code>Component.flushToDOM</code></a>.</p>
 
     
 
@@ -694,13 +738,10 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
     <footer class="footer guide-links c">
       
       
-        <span class="float-right">
-          <a href="/docs/master/components/canvas.html" class="guide-link guide-link-right">canvas →</a></span>
-      
     </footer>
 
     <footer class="footer footnote">
-  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/components/index.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
+  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/components/debug.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
 </footer>
 
   </div>

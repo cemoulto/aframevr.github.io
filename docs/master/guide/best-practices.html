@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="master">
   <head>
-    <title>Getting Started –  Docs  – A-Frame</title>
+    <title>Best Practices –  Docs  – A-Frame</title>
     
 
 <script>
@@ -213,9 +213,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item  subnav-item-current">
+          <li class="subnav-item ">
             <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link current">
+               class="subnav-link">
               Getting Started
             </a>
           </li>
@@ -241,9 +241,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item ">
+          <li class="subnav-item  subnav-item-current">
             <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
+               class="subnav-link current">
               Best Practices
             </a>
           </li>
@@ -718,96 +718,48 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </blockquote>
 
     
-    <h1 class="page__title">Getting Started</h1>
+    <h1 class="page__title">Best Practices</h1>
 
     
     
-      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Welcome! Make sure to read the <a href="./">introduction</a>. If you’re ready to
-go, we have several ways of getting started.</p>
-
-      
-
-
-  <h2>Table of Contents</h2>
-
-  <ul id="toc">
-    
-      <li>
-        <a href="#play-with-codepen">Play with CodePen</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#grab-the-boilerplate">Grab the Boilerplate</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#include-the-js-build">Include the JS Build</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
-        <a href="#install-from-npm">Install from npm</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-  </ul>
-
-
-      
-<h2 id="play-with-codepen"><a href="#play-with-codepen" class="headerlink" title="Play with CodePen"></a>Play with CodePen</h2><p><a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">CodePen</a> is a playground for front-end web development. We can edit
-HTML and JavaScript directly in the browser with its text editor, see changes
-live, and share code snippets. This is a fast way to dive in without having to
-download or install anything. Check out the <a href="http://codepen.io/mozvr/" target="_blank" rel="external">official MozVR
-CodePens</a> and the <a href="http://codepen.io/team/mozvr/pen/BjygdO" target="_blank" rel="external">A-Frame Hello World
-CodePen</a>:</p>
-<p data-height="300" data-theme-id="0" data-slug-hash="BjygdO" data-default-tab="html" data-user="mozvr" class="codepen">See the Pen <a href="http://codepen.io/team/mozvr/pen/BjygdO/" target="_blank" rel="external">Hello World â A-Frame</a> by Mozilla VR (<a href="http://codepen.io/mozvr" target="_blank" rel="external">@mozvr</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
-
-<h2 id="grab-the-boilerplate"><a href="#grab-the-boilerplate" class="headerlink" title="Grab the Boilerplate"></a>Grab the Boilerplate</h2><p>The boilerplate contains:</p>
+      <h2 id="vr-design"><a href="#vr-design" class="headerlink" title="VR Design"></a>VR Design</h2><p>Designing for VR is different than designing for flat experiences. As a new
+medium, there are new sets of best practices to follow, especially to maintain
+user comfort and presence. This has been thoroughly written about so we defer
+to these comprehensive guides:</p>
 <ul>
-<li>A simple HTML file that links to the <a href="#builds-prod">current version of A-Frame</a> of A-Frame</li>
-<li>An optional local development server</li>
-<li>An easy deployment workflow for <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a> to share with the world</li>
+<li><a href="https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/" target="_blank" rel="external">Oculus Best Practices (for VR)</a></li>
+<li><a href="https://developer.leapmotion.com/assets/Leap%20Motion%20VR%20Best%20Practices%20Guidelines.pdf" target="_blank" rel="external">Leap Motion VR Best Practices Guidelines</a></li>
 </ul>
-<p>We can grab the boilerplate in one of two ways:</p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/" target="_blank" rel="external">Fork on GitHub</a></p>
-<p><a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip" target="_blank" rel="external">Download .ZIP<span></span></a></p>
-<h2 id="include-the-js-build"><a href="#include-the-js-build" class="headerlink" title="Include the JS Build"></a>Include the JS Build</h2><p>If we want to just include the JS build from the CDN, we can drop a <code>&lt;script&gt;</code> tag straight into our HTML:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- Production Version, Minified --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- Development Version, Uncompressed with Source Maps --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://aframe.io/releases/&#123;&#123; version &#125;&#125;/aframe.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>If we want to serve it locally, we can download the JS build:</p>
-<p><a id="builds-prod" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.min.js" download="">Production Version <span>0.2.0</span></a> <em class="install-note">Minified</em>
-<a id="builds-dev" class="btn btn-download" href="https://aframe.io/releases/0.2.0/aframe.js" download="">Development Version <span>0.2.0</span></a> <em class="install-note">Uncompressed with Source Maps</em></p>
-<h2 id="install-from-npm"><a href="#install-from-npm" class="headerlink" title="Install from npm"></a>Install from npm</h2><p>For more advanced users who want to use their own build steps, we can install through npm:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># Latest stable version (https://www.npmjs.com/package/aframe)</span></div><div class="line">$ npm install aframe</div><div class="line"></div><div class="line"><span class="comment"># Bleeding-edge version (https://github.com/aframevr/aframe)</span></div><div class="line">$ npm install aframevr/aframe</div></pre></td></tr></table></figure>
-<p>Then we can just require A-Frame from our app, perhaps built with Browserify or Webpack:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'aframe'</span>);</div></pre></td></tr></table></figure>
+<p>The common golden rule, however, is to never unexpectedly take control of the
+camera away from users.</p>
+<h2 id="performance"><a href="#performance" class="headerlink" title="Performance"></a>Performance</h2><p>Performance is critical in VR. A high framerate must be maintained in order for
+users to be comfortable. Here are some ways to help improve performance of an
+A-Frame scene:</p>
+<ul>
+<li>Use <a href="../guide/device-and-platform-support.html#hardware-specifications">recommended hardware specifications</a>.</li>
+<li>Use the <strong><a href="../components/stats.html">stats component</a></strong> to keep an eye on various metrics (FPS,
+vertex and face count, geometry and material count, draw calls, number of entities.  We
+want to maximize FPS and minimize everything else.</li>
+<li>Make use of the <strong><a href="../core/asset-management-system.html">asset management system</a></strong> to benefit from browser
+caching and preloading. Trying to fetch assets while rendering is slower than
+fetching all assets before rendering.</li>
+<li>Look to make use of <strong><a href="../components/geometry.html#mergeto">geometry merging</a></strong> to limit draw calls when
+multiple geometries are sharing the same material.</li>
+<li>If using models, look to bake your lights into textures rather than relying
+on real-time lighting and shadows.</li>
+<li>Rather than using COLLADA or OBJ models, try using <strong><a href="https://github.com/xirvr/aframe-gltf" target="_blank" rel="external">glTF</a></strong>, a more
+efficient 3D format. Note that glTF support in three.js is still very new so
+your mileage may vary.</li>
+<li>Generally, the fewer number of entities and lights in the scene, the better.</li>
+</ul>
+<h2 id="a-frame"><a href="#a-frame" class="headerlink" title="A-Frame"></a>A-Frame</h2><p>And finally, some best practices for the framework:</p>
+<ul>
+<li>Don’t repeat yourself (<strong>DRY</strong>). Make use of <a href="../components/mixins.html">mixins</a> and <a href="https://github.com/ngokevin/aframe-template-component" target="_blank" rel="external">templating</a> to
+reduce the amount of copy-and-pasting and reduce the amount of HTML in your scene.</li>
+<li>Try to make use of the <a href="../core/">entity-component-system framework</a>. It’s what the
+framework is all about! Develop within components to encourage declarativeness
+and reusability.</li>
+</ul>
 
     
 
@@ -815,16 +767,13 @@ CodePen</a>:</p>
     <footer class="footer guide-links c">
       
         <span class="float-left">
-          <a href="/docs/master/guide/" class="guide-link guide-link-left">← Introduction </a></span>
+          <a href="/docs/master/guide/device-and-platform-support.html" class="guide-link guide-link-left">← Device &amp; Platform Support </a></span>
       
-      
-        <span class="float-right">
-          <a href="/docs/master/guide/building-a-basic-scene.html" class="guide-link guide-link-right">Building a Basic Scene →</a></span>
       
     </footer>
 
     <footer class="footer footnote">
-  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/guide/getting-started.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
+  <p>Caught a mistake or want to contribute to the documentation? <br><br> <a href="https://github.com/aframevr/aframe/edit/master/docs/guide/best-practices.md" class="github-file-link" target="_blank" rel="external">Suggest an edit to this page on GitHub</a></p>
 </footer>
 
   </div>
