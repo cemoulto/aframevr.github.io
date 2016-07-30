@@ -8,7 +8,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Sat, 30 Jul 2016 01:08:16 GMT</pubDate>
+    <pubDate>Sat, 30 Jul 2016 01:16:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,7 +24,10 @@
       
       <content:encoded>&lt;p&gt;It now looks finally realistic for an 0.3.0 release next week! The &lt;a href=&quot;https://github.com/aframevr/aframe/milestone/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub
 milestone&lt;/a&gt; has been updated.&lt;/p&gt;
-</content:encoded>
+&lt;p&gt;&lt;a href=&quot;http://blairmacintyre.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Blair MacIntyre&lt;/a&gt;, a Georgia Tech professor researching
+augmented reality got A-Frame working in the Argon AR Browser:&lt;/p&gt;
+&lt;video autoplay loop src=&quot;/images/awoa/argon.mp4&quot; width=&quot;240&quot;&gt;
+&lt;/video&gt;</content:encoded>
       
       <comments>https://aframe.io/blog/awoa-23/#disqus_thread</comments>
     </item>
