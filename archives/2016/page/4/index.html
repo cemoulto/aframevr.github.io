@@ -9,9 +9,9 @@
 
 
 <!DOCTYPE html>
-<html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="examples">
+<html lang="en" data-is-home="false" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="/" data-title="{title} | A-Frame" data-is-spa="false" data-ga-id="UA-24056643-4" data-aframe-version="0.2.0" data-docs-version="archives">
   <head>
-    <title>Cursor & Hover – A-Frame</title>
+    <title>A-Frame</title>
     
 
 <script>
@@ -57,10 +57,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
     <script src="/js/compat.js"></script>
 
     
-      <link rel="stylesheet" href="/css/index.css">
-      
-        <link rel="stylesheet" href="/css/examples.css">
-      
+      <link rel="stylesheet" href="/css/secondary.css">
     
 
     
@@ -76,7 +73,17 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
 
   </head>
-  <body data-page-layout="" data-page-type="examples">
+  <body data-page-layout="" data-page-type="">
+    
+      <aside class="sidebar sidebar-mobile borderless-links c">
+  <header id="header" class="header">
+    <a href="#secondary-nav" class="mobile-nav-btn">Menu</a>
+    <a id="logo" class="logo" href="/">
+      <span class="logo__wordmark">A-Frame</span>
+    </a>
+  </header>
+</aside>
+
     
     <main id="main" class="main">
       
@@ -177,13 +184,6 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
             <li data-supports-android="true" data-supports-ios="true" data-url="examples/showcase/sky/" data-scene-url="https://aframe.io/aframe/examples/primitives-sky/" data-slug="sky" data-idx="10" class="example-item subnav-item"><a data-spa-link href="/examples/showcase/sky/" class="subnav-link"><span class="sidebar__link__text">Panorama</span></a></li>
           
-            
-            
-            
-            
-
-            <li data-supports-android="true" data-supports-ios="true" data-url="examples/showcase/cursor/" data-scene-url="https://aframe.io/aframe/examples/declarative-events-cursor/" data-slug="cursor" data-idx="11" class="example-item subnav-item current"><a data-spa-link href="/examples/showcase/cursor/" class="subnav-link current"><span class="sidebar__link__text">Cursor &amp; Hover</span></a></li>
-          
         </ul>
 
         <nav class="example-nav c">
@@ -197,14 +197,42 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 </aside>
 
 
-<div class="content content--examples">
-  <div class="content--body">
+<div class="content content--index">
+  <div class="aframe-animation">
     <iframe id="exampleIframe" class="example__iframe"
-        width="100%"
-        height="100%"
-        allowfullscreen="yes" scrolling="no"></iframe>
-  <a href="#" class="btn example__viewsource" id="exampleViewsource" target="_blank">View Source</a>
-
+            width="100%"
+            height="100%"
+            src="https://aframe.io/aframe/examples/animation-aframe-logo/?ui=false"
+            allowfullscreen="yes" scrolling="no"></iframe>
+  </div>
+  <div class="copy__wrap">
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="/docs/0.2.0/guide/">Docs</a>
+      </li>
+      <li class="menu-item">
+        <a href="/faq/">FAQ</a>
+      </li>
+      <li class="menu-item">
+        <a href="/blog/">Blog</a>
+      </li>
+      <li class="menu-item">
+        <a href="/community/">Community</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://github.com/aframevr/aframe/" rel="external">GitHub</a>
+      </li>
+    </ul>
+    <h1 class="slogan">
+      Building blocks for the<br>
+      virtual reality web
+    </h1>
+    
+    <a href="/docs/0.2.0/guide/getting-started.html"
+       class="get-started nav-link">
+      Get Started
+    </a>
+    <a class="credits borderless-link" href="http://mozvr.com/" rel="external"></a>
   </div>
 </div>
 
@@ -212,8 +240,6 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
     <script src="/js/common.js"></script>
     <script src="/js/ga.js"></script>
     <script src="/js/single-page.js"></script>
-    
-      <script src="/js/examples.js"></script>
     
     
       <script src="/js/docs.js"></script>
