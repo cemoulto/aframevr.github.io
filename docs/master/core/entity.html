@@ -320,16 +320,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
@@ -347,20 +347,6 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
       <!-- Section links. -->
       <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/components/geometry.html"
-               class="subnav-link">
-              geometry
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/components/material.html"
-               class="subnav-link">
-              material
-            </a>
-          </li>
         
           <li class="subnav-item ">
             <a href="/docs/master/components/blend-model.html"
@@ -412,6 +398,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
+            <a href="/docs/master/components/geometry.html"
+               class="subnav-link">
+              geometry
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
             <a href="/docs/master/components/hand-controls.html"
                class="subnav-link">
               hand-controls
@@ -436,6 +429,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/look-controls.html"
                class="subnav-link">
               look-controls
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/material.html"
+               class="subnav-link">
+              material
             </a>
           </li>
         
@@ -825,7 +825,7 @@ and functionality.</p>
         
           <ul>
             
-              <li><a href="#listening-for-component-changes">Listening for Component Changes</a></li>
+              <li><a href="#event-detail">Event Detail</a></li>
             
           </ul>
         
@@ -915,11 +915,15 @@ Read more about <a href="../components/debug.html#component-to-dom-serialization
 <tbody>
 <tr>
 <td>child-attached</td>
-<td>A child was attached to the entity. The event detail will provide the attached child.</td>
+<td>A child was attached to the entity.</td>
 </tr>
 <tr>
 <td>componentchanged</td>
-<td>One of the entity’s component’s data was modified. The event detail will provide what data on what changed.</td>
+<td>One of the entity’s component’s data was modified.</td>
+</tr>
+<tr>
+<td>componentremoved</td>
+<td>One of the entity’s component was removed.</td>
 </tr>
 <tr>
 <td>loaded</td>
@@ -935,39 +939,79 @@ Read more about <a href="../components/debug.html#component-to-dom-serialization
 </tr>
 <tr>
 <td>stateadded</td>
-<td>The entity received a new state. The event detail will provide which state was attached.</td>
+<td>The entity received a new state.</td>
 </tr>
 <tr>
 <td>stateremoved</td>
-<td>The entity no longer has a certain state. The event detail will provide which state was detached.</td>
+<td>The entity no longer has a certain state.</td>
+</tr>
+<tr>
+<td>schemachanged</td>
+<td>The schema of a component was changed.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="listening-for-component-changes"><a href="#listening-for-component-changes" class="headerlink" title="Listening for Component Changes"></a>Listening for Component Changes</h3><p>We can use the <code>componentchanged</code> event to listen for changes to the entity:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">entity.addEventListener(<span class="string">'componentchanged'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">evt</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (evt.name === <span class="string">'position'</span>) &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Entity has moved from'</span>, evt.oldData, <span class="string">'to'</span>, evt.newData, <span class="string">'!'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h4 id="event-detail"><a href="#event-detail" class="headerlink" title="Event Detail"></a>Event Detail</h4><p>Below is what the event detail will contain for <code>componentchanged</code>:</p>
+<h3 id="event-detail"><a href="#event-detail" class="headerlink" title="Event Detail"></a>Event Detail</h3><p>Below is what the event detail contains for each event:</p>
 <table>
 <thead>
 <tr>
+<th>Event Name</th>
 <th>Property</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>child-attached</td>
+<td>el</td>
+<td>Reference to the attached child element.</td>
+</tr>
+<tr>
+<td>componentremoved</td>
+<td>name</td>
+<td>Name of component that was removed.</td>
+</tr>
+<tr>
+<td>componentchanged</td>
 <td>name</td>
 <td>Name of component that had its data modified.</td>
 </tr>
 <tr>
+<td></td>
+<td>id</td>
+<td>Id of component that had its data modified.</td>
+</tr>
+<tr>
+<td></td>
 <td>newData</td>
 <td>Component’s new data, after it was modified.</td>
 </tr>
 <tr>
+<td></td>
 <td>oldData</td>
 <td>Component’s previous data, before it was modified.</td>
 </tr>
+<tr>
+<td>stateadded</td>
+<td>state</td>
+<td>The state that was attached (string).</td>
+</tr>
+<tr>
+<td>stateremoved</td>
+<td>state</td>
+<td>The state that was detached (string).</td>
+</tr>
+<tr>
+<td>schemachanged</td>
+<td>component</td>
+<td>Name of component that had it’s schema changed.</td>
+</tr>
 </tbody>
 </table>
+<h4 id="listening-for-component-changes"><a href="#listening-for-component-changes" class="headerlink" title="Listening for Component Changes"></a>Listening for Component Changes</h4><p>We can use the <code>componentchanged</code> event to listen for changes to the entity:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">entity.addEventListener(<span class="string">'componentchanged'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">evt</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (evt.detail.name === <span class="string">'position'</span>) &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Entity has moved from'</span>, evt.detail.oldData, <span class="string">'to'</span>, evt.detail.newData, <span class="string">'!'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="listening-for-child-elements-being-attached"><a href="#listening-for-child-elements-being-attached" class="headerlink" title="Listening for child elements being attached"></a>Listening for child elements being attached</h4><p>We can use the <code>child-attached</code> event to listen for elements being attached:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">entity.addEventListener(<span class="string">'child-attached'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (evt.detail.el.tagName.toLowerCase() === <span class="string">'a-box'</span>) &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'a box element has been attached'</span>);</div><div class="line">  &#125;;</div><div class="line">));</div></pre></td></tr></table></figure>
 
     
 

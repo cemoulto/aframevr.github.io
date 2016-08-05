@@ -8,8 +8,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Sat, 30 Jul 2016 01:16:40 GMT</pubDate>
+    <pubDate>Fri, 05 Aug 2016 21:24:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 24</title>
+      <link>https://aframe.io/blog/awoa-24/</link>
+      <guid>https://aframe.io/blog/awoa-24/</guid>
+      <pubDate>Fri, 05 Aug 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;0.3.0 &lt;a href=&quot;https://github.com/aframevr/aframe/milestone/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;milestone burndown&lt;/a&gt;!
+While we still try 
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;0.3.0 &lt;a href=&quot;https://github.com/aframevr/aframe/milestone/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;milestone burndown&lt;/a&gt;!
+While we still try to get the release out, augmented reality continues to creep
+in…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-24/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 23</title>
@@ -278,23 +298,6 @@ A Summer of A-Frame.&lt;/p&gt;
 </content:encoded>
       
       <comments>https://aframe.io/blog/awoa-10/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 9</title>
-      <link>https://aframe.io/blog/awoa-09/</link>
-      <guid>https://aframe.io/blog/awoa-09/</guid>
-      <pubDate>Fri, 15 Apr 2016 07:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Inspired by &lt;a href=&quot;https://blog.servo.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This Week in Servo&lt;/a&gt;, welcome to A Week of A-Frame! After 
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;Inspired by &lt;a href=&quot;https://blog.servo.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This Week in Servo&lt;/a&gt;, welcome to A Week of A-Frame! After a hiatus in &lt;a href=&quot;https://aframevr.tumblr.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A-Frame Feature Friday&lt;/a&gt;, we return to our regularly scheduled programming of A-Frame awesomeness here on the A-Frame blog.&lt;/p&gt;
-</content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-09/#disqus_thread</comments>
     </item>
     
   </channel>
