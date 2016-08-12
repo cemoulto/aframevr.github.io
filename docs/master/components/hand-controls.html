@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -197,66 +197,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
       <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-inactive">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -320,16 +263,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -722,13 +672,12 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
     
     
-      <p>It handles events coming from the vive-controls
-Translate button events to hand related actions:
-gripclose, gripopen, thumbup, thumbdown, pointup, pointdown
-It loads a hand model with gestures that are applied based
-on the button pressed</p>
-<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">hand-controls</span>=<span class="string">"left"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="value"><a href="#value" class="headerlink" title="Value"></a>Value</h2><table>
+      <p>The hand-controls gives tracked hands (using a prescribed model) with animated
+gestures. It wraps the <a href="./components/vive-controls.html">vive-controls component</a>, which wraps the
+<a href="./components/tracked-controls.html">tracked-controls component</a>. It adds additional events, semantically
+named, and handles hand animations.</p>
+<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">hand-controls</span>=<span class="string">"left"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">hand-controls</span>=<span class="string">"right"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="values"><a href="#values" class="headerlink" title="Values"></a>Values</h2><table>
 <thead>
 <tr>
 <th>Value</th>
@@ -738,11 +687,11 @@ on the button pressed</p>
 <tbody>
 <tr>
 <td>left</td>
-<td>The entity will track the left hand.</td>
+<td>The entity will track the left hand controller.</td>
 </tr>
 <tr>
 <td>right</td>
-<td>The entity will track the right hand.</td>
+<td>The entity will track the right hand controller.</td>
 </tr>
 </tbody>
 </table>
@@ -756,30 +705,34 @@ on the button pressed</p>
 <tbody>
 <tr>
 <td>gripclose</td>
-<td>Hand is closed</td>
+<td>Grip buttons pressed. Hand is closed.</td>
 </tr>
 <tr>
 <td>gripopen</td>
-<td>Hand is open</td>
+<td>Grip buttons released. Hand is open.</td>
 </tr>
 <tr>
 <td>pointup</td>
-<td>Index is up</td>
+<td>Trigger button pressed. Index finger pointing up.</td>
 </tr>
 <tr>
 <td>pointdown</td>
-<td>Index is down</td>
+<td>Trigger button released. Index finger pointing down.</td>
 </tr>
 <tr>
 <td>thumbup</td>
-<td>Thumb is up</td>
+<td>Thumbpad pressed. Thumb is pointing up.</td>
 </tr>
 <tr>
 <td>thumbdown</td>
-<td>Thumb is down</td>
+<td>Thumbpad released. Thumb is pointing down.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="assets"><a href="#assets" class="headerlink" title="Assets"></a>Assets</h2><ul>
+<li><a href="https://media.aframe.io/controllers/hands/leftHand.json" target="_blank" rel="external">Left hand model</a></li>
+<li><a href="https://media.aframe.io/controllers/hands/rightHand.json" target="_blank" rel="external">Right hand model</a></li>
+</ul>
 
     
 

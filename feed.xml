@@ -8,8 +8,27 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Building Blocks for the VR Web</description>
-    <pubDate>Fri, 05 Aug 2016 21:24:05 GMT</pubDate>
+    <pubDate>Fri, 12 Aug 2016 21:56:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>A Week of A-Frame 25</title>
+      <link>https://aframe.io/blog/awoa-25/</link>
+      <guid>https://aframe.io/blog/awoa-25/</guid>
+      <pubDate>Fri, 12 Aug 2016 07:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;The &lt;a href=&quot;https://github.com/aframevr/aframe/milestone/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;milestone for 0.3.0&lt;/a&gt; is
+just about clear. 
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;The &lt;a href=&quot;https://github.com/aframevr/aframe/milestone/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;milestone for 0.3.0&lt;/a&gt; is
+just about clear. Any time now!&lt;/p&gt;
+</content:encoded>
+      
+      <comments>https://aframe.io/blog/awoa-25/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>A Week of A-Frame 24</title>
@@ -281,23 +300,6 @@ A Summer of A-Frame.&lt;/p&gt;
       <content:encoded></content:encoded>
       
       <comments>https://aframe.io/blog/awoa-11/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>A Week of A-Frame 10</title>
-      <link>https://aframe.io/blog/awoa-10/</link>
-      <guid>https://aframe.io/blog/awoa-10/</guid>
-      <pubDate>Fri, 22 Apr 2016 07:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;a href=&quot;https://github.com/mayognaise&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mayo&lt;/a&gt; dropping shaders, &lt;a href=&quot;http://altvr.com&quot; target=&quot;_bla
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/mayognaise&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mayo&lt;/a&gt; dropping shaders, &lt;a href=&quot;http://altvr.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AltspaceVR&lt;/a&gt; asking A-Frame for a dance, and &lt;a href=&quot;https://scenevr.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SceneVR&lt;/a&gt; baking scenes. All vying for the crown of A Week on A-Frame, but winter is coming as &lt;a href=&quot;https://twitter.com/donmccurdy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Don McCurdy&lt;/a&gt; marches &lt;a href=&quot;https://github.com/aframevr/aframe/pull/1248&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;the revamped controls API&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-      
-      <comments>https://aframe.io/blog/awoa-10/#disqus_thread</comments>
     </item>
     
   </channel>

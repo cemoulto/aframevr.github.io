@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -196,67 +196,10 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-active">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-active">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -319,17 +262,17 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item  subnav-item-current">
-            <a href="/docs/master/core/utils.html"
-               class="subnav-link current">
-              Utils
-            </a>
-          </li>
-        
           <li class="subnav-item ">
             <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
               AFRAME Globals
+            </a>
+          </li>
+        
+          <li class="subnav-item  subnav-item-current">
+            <a href="/docs/master/core/utils.html"
+               class="subnav-link current">
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -709,7 +659,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
   <div class="copy__wrap">
     <p class="page__section">
       <a href="/docs/master/core/" class="borderless-link">
-        master &rsaquo; Core
+        master &rsaquo; Concepts and API
       </a>
     </p>
     
@@ -722,7 +672,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
     
     
-      <p>Most of A-Frame’s utility modules are public through <code>AFRAME.utils</code>.</p>
+      <p>A-Frame’s utility modules are public through <code>AFRAME.utils</code>.</p>
 
       
 
@@ -743,6 +693,21 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
               <li><a href="#parse-value">.parse(value)</a></li>
             
               <li><a href="#stringify-data">.stringify(data)</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#aframe-utils-entity">AFRAME.utils.entity</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+              <li><a href="#getcomponentproperty-entity-componentname-delimiter-39-39">.getComponentProperty(entity, componentName, delimiter=&#39;.&#39;)</a></li>
+            
+              <li><a href="#setcomponentproperty-entity-componentname-value-delimiter">.setComponentProperty(entity, componentName, value, delimiter)</a></li>
             
           </ul>
         
@@ -770,13 +735,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
         
           <ul>
             
-              <li><a href="#deepequal-a-b">deepEqual(a, b)</a></li>
+              <li><a href="#aframe-utils-deepequal-a-b">AFRAME.utils.deepEqual(a, b)</a></li>
             
-              <li><a href="#diff-a-b">diff(a, b)</a></li>
+              <li><a href="#aframe-utils-diff-a-b">AFRAME.utils.diff(a, b)</a></li>
             
-              <li><a href="#extend-target-source-source-…">extend(target, source, [source, …])</a></li>
+              <li><a href="#aframe-utils-extend-target-source-source">AFRAME.utils.extend(target, source, [source, ...])</a></li>
             
-              <li><a href="#extenddeep-target-source-source-…">extendDeep(target, source, [source, …])</a></li>
+              <li><a href="#aframe-utils-extenddeep-target-source-source">AFRAME.utils.extendDeep(target, source, [source, ...])</a></li>
             
           </ul>
         
@@ -786,23 +751,35 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
 
       
-<h2 id="aframe-utils-coordinates"><a href="#aframe-utils-coordinates" class="headerlink" title="AFRAME.utils.coordinates"></a>AFRAME.utils.coordinates</h2><p>Module for handling vec3 and vec4 types.</p>
-<h3 id="iscoordinate-value"><a href="#iscoordinate-value" class="headerlink" title=".isCoordinate(value)"></a>.isCoordinate(value)</h3><p>Tests whether a string is a vec3.</p>
+<h2 id="aframe-utils-coordinates"><a href="#aframe-utils-coordinates" class="headerlink" title="AFRAME.utils.coordinates"></a><code>AFRAME.utils.coordinates</code></h2><p>Module for handling vec3 and vec4 types.</p>
+<h3 id="iscoordinate-value"><a href="#iscoordinate-value" class="headerlink" title=".isCoordinate(value)"></a><code>.isCoordinate(value)</code></h3><p>Tests whether a string is a vec3.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.utils.coordinates.isCoordinate(<span class="string">'1 2 3'</span>)</div><div class="line"><span class="comment">// &gt;&gt; true</span></div></pre></td></tr></table></figure>
-<h3 id="parse-value"><a href="#parse-value" class="headerlink" title=".parse(value)"></a>.parse(value)</h3><p>Parses an “x y z” string to an <code>{x, y, z}</code> vec3 object. Or parses an “x y z w” string to an {x, y, z w} vec3 object.</p>
+<h3 id="parse-value"><a href="#parse-value" class="headerlink" title=".parse(value)"></a><code>.parse(value)</code></h3><p>Parses an “x y z” string to an <code>{x, y, z}</code> vec3 object. Or parses an “x y z w” string to an {x, y, z w} vec3 object.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.utils.coordinates.parse(<span class="string">'1 2 -3'</span>)</div><div class="line"><span class="comment">// &gt;&gt; &#123;x: 1, y: 2, z: -3&#125;</span></div></pre></td></tr></table></figure>
-<h3 id="stringify-data"><a href="#stringify-data" class="headerlink" title=".stringify(data)"></a>.stringify(data)</h3><p>Stringifies an <code>{x, y, z}</code> vec3 object to an “x y z” string.</p>
+<h3 id="stringify-data"><a href="#stringify-data" class="headerlink" title=".stringify(data)"></a><code>.stringify(data)</code></h3><p>Stringifies an <code>{x, y, z}</code> vec3 object to an “x y z” string.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.utils.coordinates.stringify(&#123;x: <span class="number">1</span>, y: <span class="number">2</span>, z: <span class="number">-3</span>&#125;)</div><div class="line"><span class="comment">// &gt;&gt; "1 2 -3"</span></div></pre></td></tr></table></figure>
-<h2 id="aframe-utils-styleparser"><a href="#aframe-utils-styleparser" class="headerlink" title="AFRAME.utils.styleParser"></a>AFRAME.utils.styleParser</h2><h3 id="parse-value-1"><a href="#parse-value-1" class="headerlink" title=".parse(value)"></a>.parse(value)</h3><p>Parses a CSS style-like string to an object.</p>
+<h2 id="aframe-utils-entity"><a href="#aframe-utils-entity" class="headerlink" title="AFRAME.utils.entity"></a><code>AFRAME.utils.entity</code></h2><h3 id="getcomponentproperty-entity-componentname-delimiter-39-39"><a href="#getcomponentproperty-entity-componentname-delimiter-39-39" class="headerlink" title=".getComponentProperty(entity, componentName, delimiter=&#39;.&#39;)"></a><code>.getComponentProperty(entity, componentName, delimiter=&#39;.&#39;)</code></h3><p>Performs like <a href="./entity.html#getcomputedattribute"><code>Entity.getComputedAttribute</code></a>, but with support for
+return an individual property for a multi-property component. <code>componentName</code>
+is a string that can either be a component name, or a component name delimited
+with a property name.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// &lt;a-entity id="box" geometry="primitive: box"&gt;&lt;/a-entity&gt;</span></div><div class="line"><span class="keyword">var</span> entity = <span class="built_in">document</span>.querySelector(<span class="string">'#box'</span>);</div><div class="line"></div><div class="line">AFRAME.utils.entity.getComponentProperty(entity, <span class="string">'geometry.primitive'</span>);</div><div class="line">AFRAME.utils.entity.getComponentProperty(entity, <span class="string">'geometry|primitive'</span>, <span class="string">'|'</span>);</div><div class="line"><span class="comment">// &gt;&gt; 'box'</span></div><div class="line"></div><div class="line">AFRAME.utils.entity.getComponentProperty(entity, <span class="string">'geometry'</span>);</div><div class="line"><span class="comment">// &gt;&gt; &#123;primitive: 'box', width: 1, ...&#125;</span></div></pre></td></tr></table></figure>
+<p>This is useful for components that need a way to reference a property of a
+multi-property component.</p>
+<h3 id="setcomponentproperty-entity-componentname-value-delimiter"><a href="#setcomponentproperty-entity-componentname-value-delimiter" class="headerlink" title=".setComponentProperty(entity, componentName, value, delimiter)"></a><code>.setComponentProperty(entity, componentName, value, delimiter)</code></h3><p>Performs like <a href="./entity.html#setattribute"><code>Entity.setAttribute</code></a>, but with support for setting an
+individual property for a multi-property component. <code>componentName</code> is a string
+that can either be a component name, or a component name delimited with a
+property name.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// &lt;a-entity id="box" geometry="primitive: box"&gt;&lt;/a-entity&gt;</span></div><div class="line"><span class="keyword">var</span> entity = <span class="built_in">document</span>.querySelector(<span class="string">'#box'</span>);</div><div class="line"></div><div class="line">AFRAME.utils.entity.setComponentProperty(entity, <span class="string">'geometry.width'</span>, <span class="number">1</span>);</div><div class="line">AFRAME.utils.entity.setComponentProperty(entity, <span class="string">'geometry|height'</span>, <span class="number">2</span>, <span class="string">'|'</span>);</div><div class="line">AFRAME.utils.entity.setComponentProperty(entity, <span class="string">'geometry'</span>, &#123;depth: <span class="number">3</span>&#125;);</div></pre></td></tr></table></figure>
+<h2 id="aframe-utils-styleparser"><a href="#aframe-utils-styleparser" class="headerlink" title="AFRAME.utils.styleParser"></a>AFRAME.utils.styleParser</h2><h3 id="parse-value-1"><a href="#parse-value-1" class="headerlink" title=".parse(value)"></a><code>.parse(value)</code></h3><p>Parses a CSS style-like string to an object.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.utils.styleParser.parse(<span class="string">'attribute: color; dur: 5000;'</span>)</div><div class="line"><span class="comment">// &gt;&gt; &#123;"attribute": "color", "dur": "5000"&#125;</span></div></pre></td></tr></table></figure>
-<h3 id="stringify-data-1"><a href="#stringify-data-1" class="headerlink" title=".stringify(data)"></a>.stringify(data)</h3><p>Stringifies an object to a CSS style-like string.</p>
+<h3 id="stringify-data-1"><a href="#stringify-data-1" class="headerlink" title=".stringify(data)"></a><code>.stringify(data)</code></h3><p>Stringifies an object to a CSS style-like string.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.utils.styleParser.stringify(&#123;height: <span class="number">10</span>, width: <span class="number">5</span>&#125;)</div><div class="line"><span class="comment">// &gt;&gt; "height: 10; width: 5"</span></div></pre></td></tr></table></figure>
-<h2 id="object-utils"><a href="#object-utils" class="headerlink" title="Object Utils"></a>Object Utils</h2><h3 id="deepequal-a-b"><a href="#deepequal-a-b" class="headerlink" title="deepEqual(a, b)"></a>deepEqual(a, b)</h3><p>Checks if two objects have the same attributes and values, including nested objects.</p>
+<h2 id="object-utils"><a href="#object-utils" class="headerlink" title="Object Utils"></a>Object Utils</h2><h3 id="aframe-utils-deepequal-a-b"><a href="#aframe-utils-deepequal-a-b" class="headerlink" title="AFRAME.utils.deepEqual(a, b)"></a><code>AFRAME.utils.deepEqual(a, b)</code></h3><p>Checks if two objects have the same attributes and values, including nested objects.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">deepEqual(&#123;a: 1, b: &#123;c: 3&#125;&#125;, &#123;a: 1, b: &#123;c: 3&#125;&#125;)</div><div class="line">// &gt;&gt; true</div></pre></td></tr></table></figure>
-<h3 id="diff-a-b"><a href="#diff-a-b" class="headerlink" title="diff(a, b)"></a>diff(a, b)</h3><p>Returns difference between two objects. The returned object’s set of keys denote which values were not equal, and the set of values are <code>b</code>‘s values.</p>
+<h3 id="aframe-utils-diff-a-b"><a href="#aframe-utils-diff-a-b" class="headerlink" title="AFRAME.utils.diff(a, b)"></a><code>AFRAME.utils.diff(a, b)</code></h3><p>Returns difference between two objects. The returned object’s set of keys denote which values were not equal, and the set of values are <code>b</code>‘s values.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">diff(&#123;a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span>&#125;, &#123;b: <span class="number">2</span>, c: <span class="number">4</span>&#125;)</div><div class="line"><span class="comment">// &gt;&gt; &#123;"a": undefined, "c": 4&#125;</span></div></pre></td></tr></table></figure>
-<h3 id="extend-target-source-source-…"><a href="#extend-target-source-source-…" class="headerlink" title="extend(target, source, [source, …])"></a>extend(target, source, [source, …])</h3><p><a href="https://www.npmjs.com/package/object-assign" target="_blank" rel="external">Object Assign polyfill</a></p>
-<h3 id="extenddeep-target-source-source-…"><a href="#extenddeep-target-source-source-…" class="headerlink" title="extendDeep(target, source, [source, …])"></a>extendDeep(target, source, [source, …])</h3><p><a href="https://www.npmjs.com/package/deep-assign" target="_blank" rel="external">Deep Assign</a></p>
+<h3 id="aframe-utils-extend-target-source-source"><a href="#aframe-utils-extend-target-source-source" class="headerlink" title="AFRAME.utils.extend(target, source, [source, ...])"></a><code>AFRAME.utils.extend(target, source, [source, ...])</code></h3><p><a href="https://www.npmjs.com/package/object-assign" target="_blank" rel="external">Object Assign polyfill</a></p>
+<h3 id="aframe-utils-extenddeep-target-source-source"><a href="#aframe-utils-extenddeep-target-source-source" class="headerlink" title="AFRAME.utils.extendDeep(target, source, [source, ...])"></a><code>AFRAME.utils.extendDeep(target, source, [source, ...])</code></h3><p><a href="https://www.npmjs.com/package/deep-assign" target="_blank" rel="external">Deep Assign</a></p>
 
     
 

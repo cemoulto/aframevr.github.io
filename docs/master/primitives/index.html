@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -197,66 +197,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
       <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item  subnav-item-current">
-            <a href="/docs/master/guide/"
-               class="subnav-link current">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-inactive">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -320,16 +263,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -779,7 +729,7 @@ entity-component-system pattern refer to these as <em>assemblages</em>.</p>
       </li>
     
       <li>
-        <a href="#registering-a-primitive">Registering a Primitive</a>
+        <a href="#register-a-primitive">Register a Primitive</a>
 
         <!-- Nested. -->
         
@@ -815,7 +765,7 @@ element while providing some defaults. It defaults the <code>geometry.primitive<
 property to <code>box</code>. And it <em>maps</em> (i.e., proxies) the HTML <code>width</code> attribute to
 the underlying <code>geometry.width</code> property and the HTML <code>color</code> attribute to the
 underlying <code>material.color</code> property.</p>
-<h2 id="registering-a-primitive"><a href="#registering-a-primitive" class="headerlink" title="Registering a Primitive"></a>Registering a Primitive</h2><p>We can compose and register our own primitives for other people to consume.</p>
+<h2 id="register-a-primitive"><a href="#register-a-primitive" class="headerlink" title="Register a Primitive"></a>Register a Primitive</h2><p>We can compose and register our own primitives for other people to consume.</p>
 <p>For example, here is what the registration looks like for <code>&lt;a-box&gt;</code> primitive:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> extendDeep = AFRAME.utils.extendDeep;</div><div class="line"></div><div class="line"><span class="comment">// The mesh mixin provides common material properties for creating mesh-based primitives.</span></div><div class="line"><span class="comment">// This makes the material component a default component and maps all the base material properties.</span></div><div class="line"><span class="keyword">var</span> meshMixin = AFRAME.primitives.getMeshMixin();</div><div class="line"></div><div class="line">AFRAME.registerPrimitive(<span class="string">'a-box'</span>, extend(&#123;&#125;, meshMixin, &#123;</div><div class="line">  <span class="comment">// Preset default components. These components and component properties will be attached to the entity out-of-the-box.</span></div><div class="line">  defaultComponents: &#123;</div><div class="line">    geometry: &#123;primitive: <span class="string">'box'</span>&#125;</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  <span class="comment">// Defined mappings from HTML attributes to component properties (using dots as delimiters). If we set `depth="5"` in HTML, then the primitive will automatically set `geometry="depth: 5"`.</span></div><div class="line">  mappings: &#123;</div><div class="line">    depth: <span class="string">'geometry.depth'</span>,</div><div class="line">    height: <span class="string">'geometry.height'</span>,</div><div class="line">    width: <span class="string">'geometry.width'</span></div><div class="line">  &#125;</div><div class="line">&#125;));</div></pre></td></tr></table></figure>
 <p>For example, Don McCurdy’s <a href="https://github.com/donmccurdy/aframe-extras" target="_blank" rel="external">aframe-extras</a> creates <code>&lt;a-ocean&gt;</code>

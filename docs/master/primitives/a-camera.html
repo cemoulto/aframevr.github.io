@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -197,66 +197,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
       <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-inactive">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -320,16 +263,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -722,7 +672,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
     
     
-      <p>The camera primitive places the user somewhere within the scene. It is an entity that prescribes the <a href="../components/">camera component</a> with mappings to controls-related components.</p>
+      <p>The camera primitive places the user somewhere within the scene. It is an
+entity that prescribes the <a href="../components/">camera component</a> with mappings to
+controls-related components.</p>
 <h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-scene</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a-box</span>&gt;</span><span class="tag">&lt;/<span class="name">a-box</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">position</span>=<span class="string">"0 1.8 5"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">a-camera</span>&gt;</span><span class="tag">&lt;/<span class="name">a-camera</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a-scene</span>&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="attributes"><a href="#attributes" class="headerlink" title="Attributes"></a>Attributes</h2><table>
 <thead>
@@ -754,23 +706,30 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 <td>0.5</td>
 </tr>
 <tr>
+<td>user-height</td>
+<td>camera.userHeight</td>
+<td>0</td>
+</tr>
+<tr>
 <td>wasd-controls-enabled</td>
 <td>wasd-controls.enabled</td>
 <td>true</td>
 </tr>
 </tbody>
 </table>
-<h2 id="manually-positioning-the-camera"><a href="#manually-positioning-the-camera" class="headerlink" title="Manually Positioning the Camera"></a>Manually Positioning the Camera</h2><p>To position the camera, set the position on a wrapper <code>&lt;a-entity&gt;</code>. Don’t set the position directly on the camera primitive because controls will quickly override the set position:</p>
+<h2 id="manually-positioning-the-camera"><a href="#manually-positioning-the-camera" class="headerlink" title="Manually Positioning the Camera"></a>Manually Positioning the Camera</h2><p>To position the camera, set the position on a wrapper <code>&lt;a-entity&gt;</code>. Don’t set
+the position directly on the camera primitive because controls will quickly
+override the set position:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">position</span>=<span class="string">"0 0 5"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a-camera</span>&gt;</span><span class="tag">&lt;/<span class="name">a-camera</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="differences-with-the-default-camera"><a href="#differences-with-the-default-camera" class="headerlink" title="Differences with the Default Camera"></a>Differences with the Default Camera</h2><p>When we use the camera primitive, A-Frame will not prescribe a default camera.</p>
-<p>Note the default camera is positioned at <code>0 1.8 4</code> whereas the camera primitive will be positioned at <code>0 0 0</code>. In the example below, we would see a box:</p>
+<p>Note the default camera is positioned at <code>0 1.8 4</code> whereas the camera primitive
+will be positioned at <code>0 0 0</code>. In the example below, we would see a box:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-box</span>&gt;</span><span class="tag">&lt;/<span class="name">a-box</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>But if we prescribe our own camera and do not adjust its position:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-box</span>&gt;</span><span class="tag">&lt;/<span class="name">a-box</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a-camera</span>&gt;</span><span class="tag">&lt;/<span class="name">a-camera</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>Then both the cube and camera wll be positioned at <code>0 0 0</code>, the camera will be <em>inside</em> the cube, and thus the box won’t be visible without moving the camera. So make sure the have the camera well-positioned.</p>
-<h2 id="making-another-entity-face-the-user"><a href="#making-another-entity-face-the-user" class="headerlink" title="Making Another Entity Face the User"></a>Making Another Entity Face the User</h2><p>We can use the <a href="../component/look-at">look-at component</a> to make another entity rotate towards the user:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-image</span> <span class="attr">look-at</span>=<span class="string">"#camera"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-image</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a-camera</span> <span class="attr">id</span>=<span class="string">"camera"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-camera</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>Whenever the user (and thus the camera) moves, then the entity will update its rotation.</p>
+<p>Then both the cube and camera wll be positioned at <code>0 0 0</code>, the camera will be
+<em>inside</em> the cube, and thus the box won’t be visible without moving the camera.
+So make sure the have the camera well-positioned.</p>
 
     
 

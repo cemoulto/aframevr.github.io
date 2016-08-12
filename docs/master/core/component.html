@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -196,67 +196,10 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-active">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-active">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -320,16 +263,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -709,7 +659,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
   <div class="copy__wrap">
     <p class="page__section">
       <a href="/docs/master/core/" class="borderless-link">
-        master &rsaquo; Core
+        master &rsaquo; Concepts and API
       </a>
     </p>
     
@@ -814,17 +764,6 @@ and functionality of entities.</p>
       </li>
     
       <li>
-        <a href="#multiple">multiple</a>
-
-        <!-- Nested. -->
-        
-          <ul>
-            
-          </ul>
-        
-      </li>
-    
-      <li>
         <a href="#lifecycle-methods">Lifecycle Methods</a>
 
         <!-- Nested. -->
@@ -861,7 +800,7 @@ and functionality of entities.</p>
       </li>
     
       <li>
-        <a href="#writing-a-component">Writing a Component</a>
+        <a href="#write-a-component">Write a Component</a>
 
         <!-- Nested. -->
         
@@ -1017,14 +956,83 @@ multi-property component (multiple named values).</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">schema: &#123;</div><div class="line">  color: &#123; <span class="keyword">default</span>: <span class="string">'#FFF'</span> &#125;,</div><div class="line">  target: &#123; type: <span class="string">'selector'</span> &#125;,</div><div class="line">  uv: &#123;</div><div class="line">    <span class="keyword">default</span>: <span class="string">'1 1'</span>,</div><div class="line">    parse: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> value.split(<span class="string">' '</span>).map(<span class="built_in">parseFloat</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="property-types"><a href="#property-types" class="headerlink" title="Property Types"></a>Property Types</h3><p>All properties have <strong>property types</strong>. Property types define how the component
 parses incoming data from the DOM, and they prescribe a default value if one is
-not defined in the property definition. A-Frame comes with several built-in
-property types such as <code>array</code>, <code>boolean</code>, <code>int</code>, <code>number</code>, <code>selector</code>, <code>src</code>, <code>string</code>,
-and <code>vec3</code>.</p>
-<p>Each type assigns a <code>parse</code> and a <code>stringify</code> function. Parsers deserialize the
-incoming string value from the DOM to be put into the component’s data object.
-Stringifiers serialize values back to the DOM when calling <code>setAttribute</code> with
-a non-string value. Alternatively, we can define our own property types by
-providing our own <code>parse</code> and/or <code>stringify</code> functions.</p>
+not defined in the property definition. Below is the list of built-in property
+types:</p>
+<table>
+<thead>
+<tr>
+<th>Property Type</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>array</td>
+<td>Comma-separated values to array (e.g., `”1, 2, 3” to [‘1’, ‘2’, ‘3’].</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Convert to boolean (i.e., <code>&quot;false&quot;</code> to false, everything else truthy).</td>
+<td>false</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Currently does no parsing. Used by the A-Frame Inspector for widgets.</td>
+<td>#FFF</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Calls <code>parseInt</code> (e.g., <code>&quot;124.5&quot;</code> to <code>124</code>).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>number</td>
+<td>Calls <code>parseFloat</code> (e.g., <code>&quot;124.5&quot; to</code>124.5’).</td>
+<td>0</td>
+</tr>
+<tr>
+<td>selector</td>
+<td>Calls <code>querySelector</code> (e.g., <code>&quot;#box&quot; to</code><a-entity id="box">`).</a-entity></td>
+<td>null</td>
+</tr>
+<tr>
+<td>selectorAll</td>
+<td>Calls <code>querySelectorAll</code> and converts <code>NodeList</code> to <code>Array</code> (e.g., <code>&quot;.boxes&quot;</code> to [&lt;a-entity class=”boxes”, …]),</td>
+<td>null</td>
+</tr>
+<tr>
+<td>src</td>
+<td>Parses URL out of <code>url(&lt;url&gt;)</code> or if it is a selector, calls <code>querySelector</code> and <code>getAttribute(&#39;src&#39;)</code>.</td>
+<td>‘’</td>
+</tr>
+<tr>
+<td>string</td>
+<td>Does no parsing.</td>
+<td>‘’</td>
+</tr>
+<tr>
+<td>vec2</td>
+<td>Parses two numbers into an <code>{x, y}</code> object (e.g., <code>1 -2</code> to <code>{x: 1, y: -2}</code>.</td>
+<td>{x: 0, y: 0}</td>
+</tr>
+<tr>
+<td>vec3</td>
+<td>Parses three numbers into an <code>{x, y, z}</code> object (e.g., <code>1 -2 3</code> to <code>{x: 1, y: -2, z: 3}</code>.</td>
+<td>{x: 0, y: 0, z: 0}</td>
+</tr>
+<tr>
+<td>vec4</td>
+<td>Parses four numbers into an <code>{x, y, z, w}</code> object (e.g., <code>1 -2 3 -4.5</code> to <code>{x: 1, y: -2, z: 3, w: -4.5}</code>.</td>
+<td>{x: 0, y: 0, z: 0, w: 0}</td>
+</tr>
+</tbody>
+</table>
+<p>The property types will parse incoming string values from the DOM and store it
+in the component’s <code>data</code> property. Alternatively, we can define our own
+property types by providing our own <code>parse</code> functions:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">schema: &#123;</div><div class="line">  <span class="comment">// Takes "a/b" and turns to ["a", "b'".</span></div><div class="line">  myProperty: &#123;</div><div class="line">    <span class="keyword">default</span>: [<span class="string">'a'</span>, <span class="string">'b'</span>],</div><div class="line">    parse: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> value.split(<span class="string">'/'</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="schema-inference"><a href="#schema-inference" class="headerlink" title="Schema Inference"></a>Schema Inference</h3><p>Property types can either be assigned explicitly, or the schema will infer one
 given the default value.</p>
 <p>Given a default value, the schema will infer a property type and inject a
@@ -1045,7 +1053,7 @@ properties then the HTML usage syntax will look like <code>physics=&quot;mass: 2
 velocity: 1 1 1&quot;</code>.</p>
 <p>For example, a physics component might look like:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">AFRAME.registerComponent(<span class="string">'physics-body'</span>, &#123;</div><div class="line">  schema: &#123;</div><div class="line">    boundingBox: &#123;</div><div class="line">      type: <span class="string">'vec3'</span>,</div><div class="line">      <span class="keyword">default</span>: &#123; x: <span class="number">1</span>, y: <span class="number">1</span>, z: <span class="number">1</span> &#125;</div><div class="line">    &#125;,</div><div class="line">    mass: &#123;</div><div class="line">      <span class="keyword">default</span>: <span class="number">0</span></div><div class="line">    &#125;,</div><div class="line">    velocity: &#123;</div><div class="line">      type: <span class="string">'vec3'</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="multiple"><a href="#multiple" class="headerlink" title="multiple"></a><code>multiple</code></h2><h2 id="lifecycle-methods"><a href="#lifecycle-methods" class="headerlink" title="Lifecycle Methods"></a>Lifecycle Methods</h2><p>With the schema being the anatomy, the lifecycle methods are the physiology;
+<h2 id="lifecycle-methods"><a href="#lifecycle-methods" class="headerlink" title="Lifecycle Methods"></a>Lifecycle Methods</h2><p>With the schema being the anatomy, the lifecycle methods are the physiology;
 the schema defines the data, the lifecycle methods <em>use</em> the data. A component
 has access to <code>this.data</code> which in a single-property schema is a value and in a
 multi-property schema is an object.</p>
@@ -1193,7 +1201,7 @@ dynamic behavior such as event listeners.</p>
 </table>
 <h2 id="methods-1"><a href="#methods-1" class="headerlink" title="Methods"></a>Methods</h2><h3 id="flushtodom"><a href="#flushtodom" class="headerlink" title=".flushToDOM()"></a><code>.flushToDOM()</code></h3><p><code>flushToDOM</code> will manually serialize the component’s data and update the DOM.
 Read more about <a href="../components/debug.html#component-to-dom-serialization">component-to-DOM serialization</a>.</p>
-<h2 id="writing-a-component"><a href="#writing-a-component" class="headerlink" title="Writing a Component"></a>Writing a Component</h2><h3 id="line-component"><a href="#line-component" class="headerlink" title="Line Component"></a>Line Component</h3><p>Let’s build an example line component that renders a line. We want to make the
+<h2 id="write-a-component"><a href="#write-a-component" class="headerlink" title="Write a Component"></a>Write a Component</h2><h3 id="line-component"><a href="#line-component" class="headerlink" title="Line Component"></a>Line Component</h3><p>Let’s build an example line component that renders a line. We want to make the
 property API flexible enough to be able to specify the color and vertices:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-entity</span> <span class="attr">line</span>=<span class="string">"color: red; path: -1 1 0, -1 0.5 0, -1 0 0"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-entity</span>&gt;</span></div></pre></td></tr></table></figure>
 <h4 id="skeleton"><a href="#skeleton" class="headerlink" title="Skeleton"></a>Skeleton</h4><p>Here is a skeleton of the component. We’ll just need a schema, a update
@@ -1224,7 +1232,7 @@ want to more granularly update objects for better performance.</p>
 <p>And voila!</p>
 <p><img src="http://i.imgur.com/icggby2.jpg" alt=""></p>
 <div class="page-caption"><span>
-  Happy face with the line component! Play with it on <a href="http://codepen.io/team/mozvr/pen/yeEQNG" target="_blank" rel="external">Codepen</a>.
+  Happy face with the line component! Play with it on <a href="http://codepen.io/team/mozvr/pen/yeEQNG" target="_blank" rel="external">CodePen</a>.
 </span></div>
 
 

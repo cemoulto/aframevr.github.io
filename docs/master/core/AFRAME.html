@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -196,67 +196,10 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-active">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-active">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -319,17 +262,17 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             </a>
           </li>
         
-          <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
-               class="subnav-link">
-              Utils
-            </a>
-          </li>
-        
           <li class="subnav-item  subnav-item-current">
             <a href="/docs/master/core/AFRAME.html"
                class="subnav-link current">
               AFRAME Globals
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/core/utils.html"
+               class="subnav-link">
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -709,7 +659,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
   <div class="copy__wrap">
     <p class="page__section">
       <a href="/docs/master/core/" class="borderless-link">
-        master &rsaquo; Core
+        master &rsaquo; Concepts and API
       </a>
     </p>
     
@@ -723,9 +673,8 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
     
     
       <p>A-Frame exposes its public interface through the <code>window.AFRAME</code> browser
-global. This same interface is exposed if requiring with Node
-(<code>require(&#39;aframe&#39;)</code>). <code>AFRAME</code> can be used to register new things and extend
-AFRAME’s capabilities.</p>
+global. This same interface is also exposed if requiring with Node
+(<code>require(&#39;aframe&#39;)</code>).</p>
 <h2 id="aframe-properties"><a href="#aframe-properties" class="headerlink" title="AFRAME Properties"></a><code>AFRAME</code> Properties</h2><table>
 <thead>
 <tr>
@@ -751,16 +700,36 @@ AFRAME’s capabilities.</p>
 <td>Object of registered components.</td>
 </tr>
 <tr>
+<td>geometries</td>
+<td>Object of registered geometries .</td>
+</tr>
+<tr>
+<td>primitives.primitives</td>
+<td>Object of registered primitives.</td>
+</tr>
+<tr>
 <td>registerComponent</td>
-<td>Function to register a <a href="./component.html">component</a>.</td>
+<td>Function to <a href="./component.html#write-a-component">register a component</a>.</td>
+</tr>
+<tr>
+<td>registerElement</td>
+<td>A flavor of <code>document.registerElement</code> that calls parent prototype handlers before child ones.</td>
+</tr>
+<tr>
+<td>registerGeometry</td>
+<td>Function to <a href="./geometry.html#register-a-custom-geometry">register a geometry</a>.</td>
 </tr>
 <tr>
 <td>registerPrimitive</td>
-<td>Function to register a <a href="../primitives/">primitive</a>.</td>
+<td>Function to <a href="../primitives/#register-a-primitive">register a primitive</a>.</td>
 </tr>
 <tr>
 <td>registerShader</td>
-<td>Function to register a <a href="./shaders.html">shader</a>.</td>
+<td>Function to <a href="./material.html#register-a-custom-material">register a material</a> or shader.</td>
+</tr>
+<tr>
+<td>schema</td>
+<td>Schema-related utilities.</td>
 </tr>
 <tr>
 <td>shaders</td>
@@ -780,7 +749,7 @@ AFRAME’s capabilities.</p>
 </tr>
 <tr>
 <td>utils</td>
-<td>A-Frame utility modules.</td>
+<td>A-Frame <a href="./utils.html">utility modules</a>.</td>
 </tr>
 <tr>
 <td>version</td>
@@ -803,20 +772,6 @@ AFRAME’s capabilities.</p>
 <tr>
 <td>hasNativeWebVRImplementation</td>
 <td>Whether the client has native WebVR support.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="document-properties"><a href="#document-properties" class="headerlink" title="document Properties"></a><code>document</code> Properties</h2><table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>registerElement</td>
-<td>Modified <code>registerElement</code> polyfill.</td>
 </tr>
 </tbody>
 </table>

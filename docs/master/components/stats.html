@@ -176,7 +176,7 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
       <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
         
           <option selected
-                  data-href="/docs/master/guide/">
+                  data-href="/docs/master/core/">
             master
           </option>
         
@@ -197,66 +197,9 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
       <!-- Section title. -->
       <h3 class="section-title docs-section-title section-title-inactive">
-        <a href="/docs/master/guide/"
-           class="section-title-link section-title-link-inactive">
-          Guide
-        </a>
-      </h3>
-
-      <!-- Section links. -->
-      <ol class="subnav section-subnav">
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/"
-               class="subnav-link">
-              Introduction
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/getting-started.html"
-               class="subnav-link">
-              Getting Started
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-a-basic-scene.html"
-               class="subnav-link">
-              Building a Basic Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/building-an-advanced-scene.html"
-               class="subnav-link">
-              Building an Advanced Scene
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/device-and-platform-support.html"
-               class="subnav-link">
-              Device &amp; Platform Support
-            </a>
-          </li>
-        
-          <li class="subnav-item ">
-            <a href="/docs/master/guide/best-practices.html"
-               class="subnav-link">
-              Best Practices
-            </a>
-          </li>
-        
-      </ol>
-    
-      
-
-      <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
         <a href="/docs/master/core/"
            class="section-title-link section-title-link-inactive">
-          Core
+          Concepts and API
         </a>
       </h3>
 
@@ -320,16 +263,16 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/utils.html"
+            <a href="/docs/master/core/AFRAME.html"
                class="subnav-link">
-              Utils
+              AFRAME Globals
             </a>
           </li>
         
           <li class="subnav-item ">
-            <a href="/docs/master/core/AFRAME.html"
+            <a href="/docs/master/core/utils.html"
                class="subnav-link">
-              AFRAME Globals
+              Utils
             </a>
           </li>
         
@@ -387,6 +330,13 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
             <a href="/docs/master/components/debug.html"
                class="subnav-link">
               debug
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/master/components/embedded.html"
+               class="subnav-link">
+              embedded
             </a>
           </li>
         
@@ -722,21 +672,25 @@ if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
 
     
     
-      <p>The stats component displays a UI with performance-related metrics. The stats component applies only to the <a href="../core/scene.html"><code>&lt;a-scene&gt;</code> element</a>.</p>
-<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-scene</span> <span class="attr">stats</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">a-scene</span>&gt;</span></div></pre></td></tr></table></figure>
+      <p>The stats component displays a UI with performance-related metrics. The stats
+component applies only to the <a href="../core/scene.html"><code>&lt;a-scene&gt;</code> element</a>.</p>
+<h2 id="example"><a href="#example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a-scene</span> <span class="attr">stats</span>&gt;</span><span class="tag">&lt;/<span class="name">a-scene</span>&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="metrics"><a href="#metrics" class="headerlink" title="Metrics"></a>Metrics</h2><ul>
 <li><strong>fps</strong>: frames per second, framerate. Aim for stable 90 fps with the WebVR 1.0 API.</li>
 <li><strong>requestAnimationFrame</strong> (raf): Latency.</li>
-<li><strong>Textures</strong>: number of three.js textures in the scene. A lower count means less memory is being used and less data is being sent to the GPU.</li>
+<li><strong>Textures</strong>: number of three.js textures in the scene. A lower count means
+less memory is being used and less data is being sent to the GPU.</li>
 <li><strong>Programs</strong>: number of GLSL shaders in the scene.</li>
-<li><strong>Geometries</strong>: number of three.js geometries in the scene. A lower count means less memory is being used.</li>
+<li><strong>Geometries</strong>: number of three.js geometries in the scene. A lower count
+means less memory is being used.</li>
 <li><strong>Vertices</strong>: number of vertices in the scene.</li>
 <li><strong>Faces</strong>: number of faces in the scene.</li>
 <li><strong>Calls</strong>: number of draw calls on each frame.</li>
 <li><strong>Load Time</strong>: how long it took for the scene to start rendering, in ms.</li>
 <li><strong>Entities</strong>: number of A-Frame entities.</li>
 </ul>
-<h2 id="toggling-ui"><a href="#toggling-ui" class="headerlink" title="Toggling UI"></a>Toggling UI</h2><p>Click or tap on the headings to collapse groups of metrics. If you tap “Framerate”, then <code>fps</code> and <code>raf</code> will collapse.</p>
+<h2 id="toggling-ui"><a href="#toggling-ui" class="headerlink" title="Toggling UI"></a>Toggling UI</h2><p>Click or tap on the headings to collapse groups of metrics. If you tap
+“Framerate”, then <code>fps</code> and <code>raf</code> will collapse.</p>
 
     
 
